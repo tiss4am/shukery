@@ -102,4 +102,77 @@ document.addEventListener('DOMContentLoaded', function () {
       if (e.key === 'ArrowRight') showImage(currentIndex + 1);
     });
   }
+
+  // ---- Slider générique (hero + espace) ----
+  function initSlider(opts) {
+    var root = document.getElementById(opts.rootId);
+    if (!root) return;
+    var slides = Array.prototype.slice.call(root.querySelectorAll(opts.slideSelector));
+    if (!slides.length) return;
+    var pagerEl = document.getElementById(opts.pagerId);
+    var prevBtn = document.getElementById(opts.prevId);
+    var nextBtn = document.getElementById(opts.nextId);
+    var current = 0;
+    var timer;
+
+    if (pagerEl) {
+      slides.forEach(function (_, i) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', 'Aller à la diapositive ' + (i + 1));
+        if (i === 0) dot.classList.add('is-active');
+        dot.addEventListener('click', function () { goTo(i); resetTimer(); });
+        pagerEl.appendChild(dot);
+      });
+    }
+
+    function goTo(index) {
+      slides[current].classList.remove('is-active');
+      if (pagerEl) pagerEl.children[current].classList.remove('is-active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('is-active');
+      if (pagerEl) pagerEl.children[current].classList.add('is-active');
+    }
+
+    function resetTimer() {
+      if (!opts.autoplay) return;
+      clearInterval(timer);
+      timer = setInterval(function () { goTo(current + 1); }, opts.autoplay);
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); resetTimer(); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); resetTimer(); });
+
+    resetTimer();
+  }
+
+  initSlider({ rootId: 'heroSlider', slideSelector: '.hero-slide', pagerId: 'heroPager', prevId: 'heroPrev', nextId: 'heroNext', autoplay: 6000 });
+  initSlider({ rootId: 'browseSlider', slideSelector: '.browse-slide', pagerId: 'browsePager', prevId: 'browsePrev', nextId: 'browseNext', autoplay: 5000 });
+
+  // ---- Onglets "Univers Shukery" ----
+  var universeTabs = document.getElementById('universeTabs');
+  var universeGrid = document.getElementById('universeGrid');
+  if (universeTabs && universeGrid) {
+    var cards = Array.prototype.slice.call(universeGrid.querySelectorAll('.universe-card'));
+
+    function filterUniverse(tab) {
+      cards.forEach(function (card) {
+        card.style.display = (tab === 'all' || card.getAttribute('data-cat') === tab) ? '' : 'none';
+      });
+      universeTabs.querySelectorAll('button').forEach(function (btn) {
+        btn.classList.toggle('is-active', btn.getAttribute('data-tab') === tab);
+      });
+    }
+
+    universeTabs.querySelectorAll('button').forEach(function (btn) {
+      btn.addEventListener('click', function () { filterUniverse(btn.getAttribute('data-tab')); });
+    });
+
+    // liens du mega-menu pointant vers un onglet précis (#univers + data-tab)
+    document.querySelectorAll('a[href="index.html#univers"][data-tab]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        filterUniverse(link.getAttribute('data-tab'));
+      });
+    });
+  }
 });

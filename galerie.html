@@ -12,8 +12,8 @@
 </head>
 <body>
 
-<section class="page-banner page-banner--nav">
-	<nav class="navbar">
+<header class="site-header">
+	<nav class="navbar" id="navbar">
 		<a href="index.html" class="brand">
 			<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
 				<ellipse cx="24" cy="41" rx="14" ry="3" fill="#D9D5CB"/>
@@ -30,13 +30,31 @@
 		</button>
 		<ul class="nav-links" id="navLinks">
 			<li><a href="index.html">Accueil</a></li>
+			<li><a href="index.html#histoire">Notre histoire</a></li>
 			<li><a href="menu.html">Menu</a></li>
+			<li><a href="index.html#univers">Univers Shukery</a></li>
 			<li><a href="galerie.html" class="is-active">Galerie</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
+		<ul class="mega-menu">
+			<li>
+				<a href="index.html#histoire">Découvrir Shukery</a>
+				<ul class="mega-dropdown">
+					<li><a href="index.html#histoire">Notre histoire</a></li>
+					<li><a href="index.html#matcha-du-jour">Le matcha du jour</a></li>
+					<li><a href="index.html#espace">L'espace</a></li>
+					<li><a href="contact.html">Nous trouver</a></li>
+				</ul>
+			</li>
+			<li><a href="menu.html">Le Menu</a></li>
+			<li><a href="index.html#univers">Univers Shukery</a></li>
+			<li><a href="galerie.html">Galerie</a></li>
+		</ul>
 		<a href="contact.html" class="btn btn--ghost nav-cta">Nous trouver</a>
 	</nav>
+</header>
 
+<section class="page-banner">
 	<div class="container">
 		<p class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Galerie</span></p>
 		<h1>Galerie</h1>
