@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerie — Shukery Coffee</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23FFD023'/%3E%3Cpath d='M12 15h24l-2.6 20A5 5 0 0 1 28.5 39h-9a5 5 0 0 1-4.9-4L12 15Z' fill='%237BA05D'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="page-banner page-banner--nav">
+	<nav class="navbar">
+		<a href="index.html" class="brand">
+			<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+				<ellipse cx="24" cy="41" rx="14" ry="3" fill="#D9D5CB"/>
+				<path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#FFD023" stroke="#2B2B2B" stroke-width="1.5"/>
+				<path d="M15 14h18l-1.6 8.5H16.6L15 14Z" fill="#7BA05D"/>
+			</svg>
+			<span class="brand-text">
+				<span class="brand-name">Shukery</span>
+				<span class="brand-tag">Coffee</span>
+			</span>
+		</a>
+		<button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+			<span></span><span></span><span></span>
+		</button>
+		<ul class="nav-links" id="navLinks">
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="galerie.html" class="is-active">Galerie</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<a href="contact.html" class="btn btn--ghost nav-cta">Nous trouver</a>
+	</nav>
+
+	<div class="container">
+		<p class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Galerie</span></p>
+		<h1>Galerie</h1>
+	</div>
+	<svg class="hero-wave" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+		<path d="M0,64 C240,140 480,0 720,48 C960,96 1200,150 1440,80 L1440,160 L0,160 Z"></path>
+	</svg>
+</section>
+
+<section class="gallery">
+	<div class="container">
+		<p class="lead center" style="max-width:640px;margin-left:auto;margin-right:auto;">Un avant-goût de nos créations — matcha lattes, boissons fruitées et douceurs faites maison. Les vraies photos de la carte arrivent bientôt !</p>
+
+		<div class="gallery-grid" style="margin-top:46px;">
+			<figure>
+				<div class="gallery-tile tile--green">
+					<svg viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="41" rx="14" ry="3" fill="rgba(255,255,255,.25)"/><path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#fff"/><ellipse cx="24" cy="15.5" rx="8.5" ry="2.6" fill="#FFD023"/></svg>
+				</div>
+				<figcaption>Matcha Latte</figcaption>
+			</figure>
+			<figure>
+				<div class="gallery-tile tile--yellow">
+					<svg viewBox="0 0 48 48" fill="none"><rect x="14" y="16" width="20" height="26" rx="4" fill="#fff"/><rect x="14" y="16" width="20" height="9" fill="#7BA05D"/><rect x="22" y="4" width="3" height="18" rx="1.5" fill="#2B2B2B" transform="rotate(6 23.5 13)"/></svg>
+				</div>
+				<figcaption>Iced Matcha-Ade Fraise</figcaption>
+			</figure>
+			<figure>
+				<div class="gallery-tile tile--cream">
+					<svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" fill="#F0DFC0" stroke="#2B2B2B" stroke-width="1.5"/><circle cx="19" cy="20" r="1.6" fill="#5F8047"/><circle cx="27" cy="18" r="1.6" fill="#5F8047"/><circle cx="30" cy="27" r="1.6" fill="#5F8047"/><circle cx="20" cy="29" r="1.6" fill="#5F8047"/></svg>
+				</div>
+				<figcaption>Cookies maison</figcaption>
+			</figure>
+			<figure>
+				<div class="gallery-tile tile--yellow">
+					<svg viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="40" rx="14" ry="3" fill="rgba(43,43,43,.12)"/><path d="M13 15h22l-2.3 20.5A4.5 4.5 0 0 1 28.2 39H19.8a4.5 4.5 0 0 1-4.5-3.5L13 15Z" fill="#fff" stroke="#2B2B2B" stroke-width="1.4"/><path d="M14.5 15h19l-1.4 7.5h-16.2L14.5 15Z" fill="#F2C9CC"/></svg>
+				</div>
+				<figcaption>Lait Fraise</figcaption>
+			</figure>
+			<figure>
+				<div class="gallery-tile tile--green">
+					<svg viewBox="0 0 48 48" fill="none"><path d="M9 37 L24 11 L39 37 Z" fill="#F2C9CC" stroke="#2B2B2B" stroke-width="1.5" stroke-linejoin="round"/><path d="M14.5 37 L24 20 L33.5 37" fill="none" stroke="#2B2B2B" stroke-width="1.1" opacity=".3"/><circle cx="24" cy="8" r="3.2" fill="#fff" stroke="#2B2B2B" stroke-width="1.2"/></svg>
+				</div>
+				<figcaption>Part de gâteau du jour</figcaption>
+			</figure>
+			<figure>
+				<div class="gallery-tile tile--cream">
+					<svg viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="40" rx="14" ry="3" fill="rgba(43,43,43,.1)"/><path d="M14 18h20l-2 18a4 4 0 0 1-4 3.5H20a4 4 0 0 1-4-3.5L14 18Z" fill="#7BA05D" stroke="#2B2B2B" stroke-width="1.4"/><path d="M16 12c0-3.3 3.6-5.5 8-5.5s8 2.2 8 5.5" stroke="#2B2B2B" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
+				</div>
+				<figcaption>Espresso &amp; classiques</figcaption>
+			</figure>
+		</div>
+	</div>
+</section>
+
+<footer class="site-footer">
+	<div class="wave-divider wave-divider--top" aria-hidden="true">
+		<svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,110 1080,-10 1440,60 L1440,100 L0,100 Z"></path></svg>
+	</div>
+
+	<div class="container footer-grid">
+		<div class="footer-col footer-brand">
+			<a href="index.html" class="brand">
+				<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+					<ellipse cx="24" cy="41" rx="14" ry="3" fill="rgba(255,247,230,.15)"/>
+					<path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#FFD023" stroke="#FFF7E6" stroke-width="1.2"/>
+					<path d="M15 14h18l-1.6 8.5H16.6L15 14Z" fill="#7BA05D"/>
+				</svg>
+				<span class="brand-text">
+					<span class="brand-name">Shukery</span>
+					<span class="brand-tag">Coffee</span>
+				</span>
+			</a>
+			<p>Café &amp; matcha — boissons gourmandes et douceurs faites maison, dans une ambiance chaleureuse et moderne.</p>
+		</div>
+
+		<div class="footer-col">
+			<h4>Contact</h4>
+			<p>Adresse à venir</p>
+			<p><a href="tel:+33100000000">01 00 00 00 00</a></p>
+			<a class="link-arrow" href="contact.html">Nous trouver →</a>
+		</div>
+
+		<div class="footer-col">
+			<h4>Horaires</h4>
+			<ul class="hours-list">
+				<li><span>Lundi</span><span>8:00–18:00</span></li>
+				<li><span>Mardi</span><span>8:00–18:00</span></li>
+				<li><span>Mercredi</span><span>8:00–18:00</span></li>
+				<li><span>Jeudi</span><span>8:00–18:00</span></li>
+				<li><span>Vendredi</span><span>8:00–19:00</span></li>
+				<li><span>Samedi</span><span>9:00–19:00</span></li>
+				<li><span>Dimanche</span><span>9:00–17:00</span></li>
+			</ul>
+		</div>
+
+		<div class="footer-col">
+			<h4>Suivez-nous</h4>
+			<div class="social-row">
+				<a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.3c0-.87.24-1.46 1.5-1.46H16.6V4.14C16.3 4.1 15.3 4 14.1 4c-2.4 0-4.1 1.47-4.1 4.16V10.5H7.5v3H10V21h3.5z"/></svg>
+				</a>
+				<a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.8.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.63.42 1.36.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.07-.22 1.8-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.07-.05-1.8-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.07.22-1.8.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.08.28 6.81.11 7.88.06 8.95.01 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z" transform="translate(0 2)"/></svg>
+				</a>
+			</div>
+			<a class="btn btn--outline btn--small" href="contact.html">Nous trouver</a>
+		</div>
+	</div>
+
+	<div class="footer-bottom container">
+		<p>© 2026 Shukery Coffee. Tous droits réservés.</p>
+	</div>
+</footer>
+
+<!-- ================= LIGHTBOX GALERIE ================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+	<button type="button" class="lightbox__close" id="lightboxClose" aria-label="Fermer">✕</button>
+	<button type="button" class="lightbox__prev" id="lightboxPrev" aria-label="Image précédente">‹</button>
+	<div class="lightbox__img" id="lightboxImg"></div>
+	<button type="button" class="lightbox__next" id="lightboxNext" aria-label="Image suivante">›</button>
+	<p class="lightbox__caption" id="lightboxCaption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shukery Coffee — Café &amp; Matcha</title>
+	<meta name="description" content="Shukery Coffee — matcha lattes, boissons fruitées et douceurs faites maison. Chaleureux, gourmand, moderne.">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23FFD023'/%3E%3Cpath d='M12 15h24l-2.6 20A5 5 0 0 1 28.5 39h-9a5 5 0 0 1-4.9-4L12 15Z' fill='%237BA05D'/%3E%3C/svg%3E">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!-- ================= HERO ================= -->
+	<header class="hero" id="accueil">
+		<nav class="navbar" id="navbar">
+			<a href="#accueil" class="brand">
+				<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+					<ellipse cx="24" cy="41" rx="14" ry="3" fill="#D9D5CB"/>
+					<path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#FFD023" stroke="#2B2B2B" stroke-width="1.5"/>
+					<path d="M15 14c0-4.5 4-7 9-7s9 2.5 9 7" stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+					<path d="M15 14h18l-1.6 8.5H16.6L15 14Z" fill="#7BA05D"/>
+					<path d="M19.5 16.5c1 1.6 2.4 1.6 3.4 0 1 1.6 2.4 1.6 3.6-.1" stroke="#fff" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+				</svg>
+				<span class="brand-text">
+					<span class="brand-name">Shukery</span>
+					<span class="brand-tag">Coffee</span>
+				</span>
+			</a>
+			<button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+			<ul class="nav-links" id="navLinks">
+				<li><a href="#accueil" class="is-active">Accueil</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="galerie.html">Galerie</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<a href="contact.html" class="btn btn--ghost nav-cta">Nous trouver</a>
+		</nav>
+
+		<div class="hero-content--split">
+			<div class="hero-copy">
+				<p class="eyebrow eyebrow--green">Shukery Coffee · Matcha &amp; café</p>
+				<h1 class="hero-title-split">Good <span class="text-green">matcha</span>, good <span class="text-yellow">mood</span></h1>
+				<p class="hero-text">Matcha premium, lattes gourmands et boissons fruitées préparés minute, dans une ambiance chaleureuse, cosy et pleine de couleurs.</p>
+				<div class="hero-actions">
+					<a href="menu.html" class="btn btn--ink">Voir le menu</a>
+					<a href="contact.html" class="btn btn--outline-ink">Nous trouver</a>
+				</div>
+				<div class="hero-tags">
+					<span>100% matcha premium</span>
+					<span>Fait maison</span>
+					<span>Sur place &amp; à emporter</span>
+				</div>
+			</div>
+			<div class="hero-visual">
+				<div class="hero-visual-blob" aria-hidden="true"></div>
+				<svg class="hero-cup" viewBox="0 0 200 300" fill="none">
+					<rect x="93" y="14" width="11" height="86" rx="5.5" fill="#FFD023" stroke="#2B2B2B" stroke-width="2" transform="rotate(8 98 57)"/>
+					<ellipse cx="100" cy="96" rx="48" ry="11" fill="#FFFDF8" stroke="#2B2B2B" stroke-width="2"/>
+					<path d="M56 97 L144 97 L133 254a13 13 0 0 1-13 12H83a13 13 0 0 1-13-12L56 97Z" fill="#FFFDF8" stroke="#2B2B2B" stroke-width="2"/>
+					<path d="M59.5 97h81l-5 60h-71l-5-60Z" fill="#7BA05D"/>
+					<path d="M64.5 157h71l-6.3 96.5a10 10 0 0 1-10 9.5H80.8a10 10 0 0 1-10-9.5L64.5 157Z" fill="#FBEBC2"/>
+					<circle cx="80" cy="190" r="2.6" fill="#FFFDF8"/>
+					<circle cx="120" cy="205" r="2.2" fill="#FFFDF8"/>
+					<circle cx="95" cy="225" r="2.4" fill="#FFFDF8"/>
+					<rect x="66" y="190" width="68" height="30" rx="7" fill="#FFD023" stroke="#2B2B2B" stroke-width="1.5"/>
+					<path d="M76 205c3-6 7-6 10 0 3-6 7-6 10 0 3-6 7-6 10 0 3-6 7-6 10 0" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round" fill="none" opacity=".55"/>
+				</svg>
+				<div class="hero-badge hero-badge--1">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-4 3-7 7-7 11a7 7 0 0 0 14 0c0-4-3-8-7-11Z"/><path d="M12 8c-2 1.6-3 3.4-3 5"/></svg>
+					Matcha premium
+				</div>
+				<div class="hero-badge hero-badge--2">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v6a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4V3"/><path d="M7 3v6a4 4 0 0 0 4 4"/><path d="M7 21h10M9 17v4M15 17v4"/></svg>
+					Fait maison
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- ================= NOTRE HISTOIRE ================= -->
+	<section class="intro">
+		<div class="container intro__grid">
+			<div class="blob-shape">
+				<svg viewBox="0 0 200 260" fill="none">
+					<ellipse cx="100" cy="210" rx="46" ry="8" fill="#5F8047"/>
+					<path d="M52 60c0-14 20-24 48-24s48 10 48 24l-9 118a14 14 0 0 1-14 13H75a14 14 0 0 1-14-13L52 60Z" fill="#FFFDF8" stroke="#2B2B2B" stroke-width="2"/>
+					<path d="M60 78c14 6 66 6 80 0" stroke="#2B2B2B" stroke-width="1.6" fill="none" opacity=".4"/>
+					<ellipse cx="100" cy="60" rx="46" ry="13" fill="#FFD023" stroke="#2B2B2B" stroke-width="2"/>
+					<path d="M62 58c8-10 20-2 38-2s30-8 38 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+					<path d="M150 44c10-4 22 0 24 10" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" fill="none"/>
+					<path d="M92 20c-2-6 2-12 8-14M108 20c2-6-2-12-8-14" stroke="#FFFDF8" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+				</svg>
+			</div>
+			<div class="intro__text">
+				<p class="eyebrow">Shukery Coffee</p>
+				<h2>Une passion pour le bon matcha</h2>
+				<p class="lead">
+					Chez Shukery, chaque boisson commence par un matcha premium fouetté à la main, associé à des ingrédients frais et gourmands — fruits, laits végétaux, sirops maison. On aime prendre le temps de bien faire les choses, dans un cadre cosy pensé pour se poser, discuter ou travailler tranquillement.
+				</p>
+				<a href="menu.html" class="btn btn--green">Découvrir le menu</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- ================= CE QUE NOUS VOUS PROPOSONS ================= -->
+	<section class="prestations">
+		<div class="container prestations__intro">
+			<p class="eyebrow eyebrow--center">Chez Shukery</p>
+			<h2 class="center">Ce que nous vous proposons</h2>
+		</div>
+		<div class="container carousel" data-carousel>
+			<button class="carousel-arrow carousel-arrow--prev" data-carousel-prev aria-label="Précédent">‹</button>
+			<div class="prestations-grid" data-carousel-track>
+				<a href="menu.html" class="prestation-card prestation-card--pattern gingham">
+					<span class="prestation-card__label">Notre Menu</span>
+				</a>
+				<div class="prestation-card prestation-card--icon">
+					<div class="prestation-card__icon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-4 3-7 7-7 11a7 7 0 0 0 14 0c0-4-3-8-7-11Z"/></svg>
+					</div>
+					<h3>Matcha premium</h3>
+					<p>Sélectionné avec soin, fouetté à la main pour une mousse fine et un goût authentique, sans amertume.</p>
+					<a href="menu.html" class="btn btn--green btn--small">En savoir plus</a>
+				</div>
+				<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="prestation-card prestation-card--pattern gingham">
+					<span class="prestation-card__label">Suivez nos actus</span>
+				</a>
+			</div>
+			<button class="carousel-arrow carousel-arrow--next" data-carousel-next aria-label="Suivant">›</button>
+		</div>
+	</section>
+
+	<!-- ================= NOS CRÉATIONS ================= -->
+	<section class="home-gallery">
+		<div class="container home-gallery__intro">
+			<p class="eyebrow eyebrow--center">Nos créations</p>
+			<h2 class="center">Un avant-goût de la carte</h2>
+		</div>
+		<div class="container home-gallery-grid">
+			<a href="galerie.html" class="tile--green">
+				<svg viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="41" rx="14" ry="3" fill="rgba(255,255,255,.25)"/><path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#fff"/><ellipse cx="24" cy="15.5" rx="8.5" ry="2.6" fill="#FFD023"/></svg>
+				<span>Matcha Latte</span>
+			</a>
+			<a href="galerie.html" class="tile--yellow">
+				<svg viewBox="0 0 48 48" fill="none"><rect x="14" y="16" width="20" height="26" rx="4" fill="#fff"/><rect x="14" y="16" width="20" height="9" fill="#7BA05D"/><rect x="22" y="4" width="3" height="18" rx="1.5" fill="#2B2B2B" transform="rotate(6 23.5 13)"/></svg>
+				<span>Iced Matcha-Ade</span>
+			</a>
+			<a href="galerie.html" class="tile--cream">
+				<svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" fill="#F0DFC0" stroke="#2B2B2B" stroke-width="1.5"/><circle cx="19" cy="20" r="1.6" fill="#5F8047"/><circle cx="27" cy="18" r="1.6" fill="#5F8047"/><circle cx="30" cy="27" r="1.6" fill="#5F8047"/><circle cx="20" cy="29" r="1.6" fill="#5F8047"/></svg>
+				<span>Cookies maison</span>
+			</a>
+		</div>
+		<div class="container center" style="margin-top:40px;">
+			<a href="galerie.html" class="btn btn--green">Voir plus</a>
+		</div>
+	</section>
+
+	<!-- ================= NOS AVIS CLIENTS ================= -->
+	<section class="testimonials">
+		<div class="container testimonials__intro">
+			<p class="eyebrow eyebrow--center">Nos avis clients</p>
+			<h2 class="center">Ce qu'ils pensent de nous</h2>
+		</div>
+		<!-- Exemples à remplacer par de vrais avis (Google, Instagram...) -->
+		<div class="container carousel" data-carousel>
+			<button class="carousel-arrow carousel-arrow--prev" data-carousel-prev aria-label="Précédent">‹</button>
+			<div class="testimonials-grid" data-carousel-track>
+				<article class="testimonial-card">
+					<div class="testimonial-card__head">
+						<span class="testimonial-card__avatar">LM</span>
+						<div>
+							<h4>Léa M.</h4>
+							<p>Avis Google</p>
+						</div>
+					</div>
+					<span class="stars">★★★★★</span>
+					<p class="testimonial-card__text">Le meilleur matcha latte du coin, jamais amer et super crémeux. L'ambiance est adorable, on a envie d'y rester des heures.</p>
+				</article>
+				<article class="testimonial-card">
+					<div class="testimonial-card__head">
+						<span class="testimonial-card__avatar">YB</span>
+						<div>
+							<h4>Yanis B.</h4>
+							<p>Avis Google</p>
+						</div>
+					</div>
+					<span class="stars">★★★★★</span>
+					<p class="testimonial-card__text">Super découverte, le matcha-ade fraise est délicieux et rafraîchissant. Accueil top, on sent que les produits sont soignés.</p>
+				</article>
+				<article class="testimonial-card">
+					<div class="testimonial-card__head">
+						<span class="testimonial-card__avatar">CD</span>
+						<div>
+							<h4>Camille D.</h4>
+							<p>Avis Google</p>
+						</div>
+					</div>
+					<span class="stars">★★★★★</span>
+					<p class="testimonial-card__text">Cadre cosy et lumineux, parfait pour travailler ou papoter entre amis. Les cookies maison sont un vrai coup de cœur.</p>
+				</article>
+			</div>
+			<button class="carousel-arrow carousel-arrow--next" data-carousel-next aria-label="Suivant">›</button>
+		</div>
+	</section>
+
+	<!-- ================= À PROPOS ================= -->
+	<section class="about" id="histoire">
+		<div class="container about__intro">
+			<p class="eyebrow eyebrow--center">Shukery Coffee</p>
+			<h2>Entrez chez Shukery et laissez-vous<br>tenter par un bon matcha</h2>
+			<p class="lead">
+				Ici, chaque boisson est préparée minute avec des produits sélectionnés avec soin — matcha premium, fruits frais, laits au choix. L'espace chaleureux et coloré, pensé dans les tons vert &amp; jaune de la marque, est fait pour prendre son temps : entre amis, en solo avec un livre, ou pour une pause gourmande dans la journée.
+			</p>
+		</div>
+
+		<div class="container split">
+			<div class="split__media gingham">
+				<svg viewBox="0 0 120 120" fill="none">
+					<ellipse cx="60" cy="98" rx="30" ry="5" fill="#5F8047"/>
+					<path d="M35 40h50l-4.5 55a8 8 0 0 1-8 7.4H47.5a8 8 0 0 1-8-7.4L35 40Z" fill="#fff" stroke="#2B2B2B" stroke-width="2"/>
+					<path d="M37 40h46l-2.4 20H39.4L37 40Z" fill="#7BA05D"/>
+					<ellipse cx="60" cy="40" rx="25" ry="7" fill="#FFD023" stroke="#2B2B2B" stroke-width="2"/>
+				</svg>
+				<p class="split__caption" style="position:absolute;bottom:16px;left:50%;transform:translateX(-50%);">Matcha latte fouetté à la main</p>
+			</div>
+
+			<div class="split__text">
+				<h3>Notre maison</h3>
+				<p>Un espace pensé pour être accessible et convivial, où l'on prend le temps de bien faire les choses : matcha premium, sirops et sauces maison, produits frais sélectionnés chaque semaine.</p>
+				<p>Sur place autour d'un bon livre, entre amis pour papoter, ou à emporter pour la route — Shukery s'adapte à votre moment.</p>
+				<a href="contact.html" class="link-arrow">Nous trouver →</a>
+			</div>
+
+			<aside class="split__info">
+				<div class="info-block">
+					<h4>Nous contacter</h4>
+					<p>Du mardi au dimanche.</p>
+					<a href="tel:+33100000000" class="info-phone">01 00 00 00 00</a>
+				</div>
+
+				<div class="info-block">
+					<h4>Services</h4>
+					<ul class="tag-list">
+						<li>Wifi gratuit</li>
+						<li>Sur place &amp; à emporter</li>
+						<li>Options véganes</li>
+					</ul>
+				</div>
+
+				<div class="info-block">
+					<h4>Nous suivre</h4>
+					<div class="social-row">
+						<a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+							<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.3c0-.87.24-1.46 1.5-1.46H16.6V4.14C16.3 4.1 15.3 4 14.1 4c-2.4 0-4.1 1.47-4.1 4.16V10.5H7.5v3H10V21h3.5z"/></svg>
+						</a>
+						<a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+							<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.8.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.63.42 1.36.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.07-.22 1.8-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.07-.05-1.8-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.07.22-1.8.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.08.28 6.81.11 7.88.06 8.95.01 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z" transform="translate(0 2)"/></svg>
+						</a>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</section>
+
+	<!-- ================= CONTACT ================= -->
+	<section class="home-contact">
+		<div class="container home-contact__grid">
+			<form class="home-contact-form" id="homeContactForm">
+				<div class="form-row">
+					<div class="form-field">
+						<label for="hcNom">Nom</label>
+						<input type="text" id="hcNom" name="nom" required>
+					</div>
+					<div class="form-field">
+						<label for="hcPrenom">Prénom</label>
+						<input type="text" id="hcPrenom" name="prenom" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-field">
+						<label for="hcTel">Téléphone</label>
+						<input type="tel" id="hcTel" name="telephone" required>
+					</div>
+					<div class="form-field">
+						<label for="hcEmail">Email</label>
+						<input type="email" id="hcEmail" name="email" required>
+					</div>
+				</div>
+				<div class="form-field">
+					<label for="hcMessage">Message</label>
+					<textarea id="hcMessage" name="message" rows="4"></textarea>
+				</div>
+				<label class="consent">
+					<input type="checkbox" required>
+					J'accepte que mes informations soient utilisées pour me recontacter.
+				</label>
+				<button type="submit" class="btn btn--green">Envoyer</button>
+				<p class="form-note" id="homeContactNote" hidden>Merci, votre message a bien été envoyé !</p>
+			</form>
+
+			<aside class="home-contact-info">
+				<h3>Contactez-nous</h3>
+				<ul class="home-contact-list">
+					<li>
+						<span class="home-contact-list__icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+						</span>
+						<a href="tel:+33100000000">01 00 00 00 00</a>
+					</li>
+					<li>
+						<span class="home-contact-list__icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+						</span>
+						Adresse à venir
+					</li>
+					<li>
+						<span class="home-contact-list__icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3z"/><path d="M3 6l9 7 9-7"/></svg>
+						</span>
+						<a href="mailto:contact@shukery.fr">contact@shukery.fr</a>
+					</li>
+				</ul>
+				<svg class="home-contact-decor" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#7BA05D"/></svg>
+			</aside>
+		</div>
+	</section>
+
+	<!-- ================= FOOTER ================= -->
+	<footer class="site-footer">
+		<div class="wave-divider wave-divider--top" aria-hidden="true">
+			<svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,110 1080,-10 1440,60 L1440,100 L0,100 Z"></path></svg>
+		</div>
+
+		<div class="container footer-grid">
+			<div class="footer-col footer-brand">
+				<a href="index.html" class="brand">
+					<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+						<ellipse cx="24" cy="41" rx="14" ry="3" fill="rgba(255,247,230,.15)"/>
+						<path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#FFD023" stroke="#FFF7E6" stroke-width="1.2"/>
+						<path d="M15 14h18l-1.6 8.5H16.6L15 14Z" fill="#7BA05D"/>
+					</svg>
+					<span class="brand-text">
+						<span class="brand-name">Shukery</span>
+						<span class="brand-tag">Coffee</span>
+					</span>
+				</a>
+				<p>Café &amp; matcha — boissons gourmandes et douceurs faites maison, dans une ambiance chaleureuse et moderne.</p>
+			</div>
+
+			<div class="footer-col">
+				<h4>Contact</h4>
+				<p>Adresse à venir</p>
+				<p><a href="tel:+33100000000">01 00 00 00 00</a></p>
+				<a class="link-arrow" href="contact.html">Nous trouver →</a>
+			</div>
+
+			<div class="footer-col">
+				<h4>Horaires</h4>
+				<ul class="hours-list">
+					<li><span>Lundi</span><span>8:00–18:00</span></li>
+					<li><span>Mardi</span><span>8:00–18:00</span></li>
+					<li><span>Mercredi</span><span>8:00–18:00</span></li>
+					<li><span>Jeudi</span><span>8:00–18:00</span></li>
+					<li><span>Vendredi</span><span>8:00–19:00</span></li>
+					<li><span>Samedi</span><span>9:00–19:00</span></li>
+					<li><span>Dimanche</span><span>9:00–17:00</span></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Suivez-nous</h4>
+				<div class="social-row">
+					<a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.3c0-.87.24-1.46 1.5-1.46H16.6V4.14C16.3 4.1 15.3 4 14.1 4c-2.4 0-4.1 1.47-4.1 4.16V10.5H7.5v3H10V21h3.5z"/></svg>
+					</a>
+					<a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.8.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.63.42 1.36.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.07-.22 1.8-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.07-.05-1.8-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.07.22-1.8.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.08.28 6.81.11 7.88.06 8.95.01 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z" transform="translate(0 2)"/></svg>
+					</a>
+				</div>
+				<a class="btn btn--outline btn--small" href="contact.html">Nous trouver</a>
+			</div>
+		</div>
+
+		<div class="footer-bottom container">
+			<p>© 2026 Shukery Coffee. Tous droits réservés.</p>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
