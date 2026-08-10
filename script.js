@@ -65,10 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function showImage(index) {
       currentIndex = (index + galleryFigures.length) % galleryFigures.length;
       var figure = galleryFigures[currentIndex];
-      var tile = figure.querySelector('.gallery-tile');
+      var img = figure.querySelector('img');
       var caption = figure.querySelector('figcaption');
-      lightboxImg.innerHTML = tile ? tile.innerHTML : '';
-      lightboxImg.className = 'lightbox__img ' + (tile ? tile.className.replace('gallery-tile', '') : '');
+      lightboxImg.innerHTML = img ? '<img src="' + img.src + '" alt="' + img.alt + '">' : '';
       lightboxCaption.textContent = caption ? caption.textContent : '';
     }
 

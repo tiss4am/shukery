@@ -1,215 +1,147 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu — Shukery Coffee</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23FFD023'/%3E%3Cpath d='M12 15h24l-2.6 20A5 5 0 0 1 28.5 39h-9a5 5 0 0 1-4.9-4L12 15Z' fill='%237BA05D'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<title>메뉴안내 — 바라보다 BARABODA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%23F1EFEB'/%3E%3Ctext x='50%25' y='58%25' font-size='24' text-anchor='middle'%3E☕%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<a href="https://mrkong.co.kr/main/index" target="_blank" rel="noopener" class="shop-banner">
+	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+	미스터콩 쇼핑몰
+</a>
+
 <header class="site-header">
 	<nav class="navbar" id="navbar">
 		<a href="index.html" class="brand">
-			<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
-				<ellipse cx="24" cy="41" rx="14" ry="3" fill="#D9D5CB"/>
-				<path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#FFD023" stroke="#2B2B2B" stroke-width="1.5"/>
-				<path d="M15 14h18l-1.6 8.5H16.6L15 14Z" fill="#7BA05D"/>
-			</svg>
-			<span class="brand-text">
-				<span class="brand-name">Shukery</span>
-				<span class="brand-tag">Coffee</span>
-			</span>
+			<img src="assets/logo.svg" alt="바라보다 BARABODA">
 		</a>
-		<button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+		<button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
 			<span></span><span></span><span></span>
 		</button>
 		<ul class="nav-links" id="navLinks">
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="index.html#histoire">Notre histoire</a></li>
-			<li><a href="menu.html" class="is-active">Menu</a></li>
-			<li><a href="index.html#univers">Univers Shukery</a></li>
-			<li><a href="galerie.html">Galerie</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li><a href="index.html">홈</a></li>
+			<li><a href="index.html#intro">프롤로그</a></li>
+			<li><a href="menu.html">메뉴안내</a></li>
+			<li><a href="index.html#universe">소통공간</a></li>
+			<li><a href="galerie.html">둘러보기</a></li>
+			<li><a href="contact.html">위치안내</a></li>
 		</ul>
 		<ul class="mega-menu">
 			<li>
-				<a href="index.html#histoire">Découvrir Shukery</a>
+				<a href="index.html#intro">바라보다 소개</a>
 				<ul class="mega-dropdown">
-					<li><a href="index.html#histoire">Notre histoire</a></li>
-					<li><a href="index.html#matcha-du-jour">Le matcha du jour</a></li>
-					<li><a href="index.html#espace">L'espace</a></li>
-					<li><a href="contact.html">Nous trouver</a></li>
+					<li><a href="index.html#intro">프롤로그</a></li>
+					<li><a href="index.html#intro">브랜드 이야기</a></li>
+					<li><a href="index.html#browse">둘러보기</a></li>
+					<li><a href="contact.html">위치안내</a></li>
 				</ul>
 			</li>
 			<li>
-				<a href="menu.html">Le Menu</a>
+				<a href="menu.html">메뉴안내</a>
 				<ul class="mega-dropdown">
-					<li><a href="menu.html">Voir le menu</a></li>
-					<li><a href="index.html#matcha-du-jour">Le matcha du jour</a></li>
+					<li><a href="menu.html">메뉴보기</a></li>
+					<li><a href="index.html#coffee-day">오늘의 커피</a></li>
 				</ul>
 			</li>
-			<li><a href="index.html#univers">Univers Shukery</a></li>
-			<li><a href="galerie.html">Galerie</a></li>
+			<li><a href="index.html#universe">소통공간</a></li>
+			<li><a href="contact.html">바램봄</a></li>
 		</ul>
-		<a href="contact.html" class="btn btn--ghost nav-cta">Nous trouver</a>
 	</nav>
 </header>
 
 <section class="page-banner">
-	<div class="container">
-		<p class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Menu</span></p>
-		<h1>Notre Menu</h1>
-	</div>
-	<svg class="hero-wave" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
-		<path d="M0,64 C240,140 480,0 720,48 C960,96 1200,150 1440,80 L1440,160 L0,160 Z"></path>
-	</svg>
+	<p class="breadcrumb"><a href="index.html">홈</a><span>/</span><span>메뉴안내</span></p>
+	<h1>메뉴안내</h1>
 </section>
 
 <section class="menu-page">
 	<div class="container">
 		<div class="menu-page__intro center">
-			<p class="lead center">
-				Matcha premium fouetté à la main, boissons fruitées et douceurs faites maison — voici un
-				aperçu de notre carte. La sélection peut évoluer selon les saisons et les arrivages.
-			</p>
+			<p class="lead center">미스터콩이 엄선한 원두로 내린 커피와 시즌 음료를 소개합니다. 매장 사정에 따라 구성이 변경될 수 있습니다.</p>
 		</div>
 
 		<div class="menu-categories">
 			<div class="menu-cat">
 				<p class="menu-cat__tag">Signature</p>
-				<h3>Matcha Latte Series</h3>
+				<h3>핸드드립 커피</h3>
 				<ul>
-					<li><span>Matcha Latte</span><span>4,80 €</span></li>
-					<li><span>Crème de Matcha Latte</span><span>5,50 €</span></li>
-					<li><span>Matcha Latte Cream Tea</span><span>5,80 €</span></li>
-					<li><span>Matcha Latte Vanille</span><span>5,20 €</span></li>
+					<li><span>오늘의 커피</span><span>6,000원</span></li>
+					<li><span>에티오피아 예가체프</span><span>6,500원</span></li>
+					<li><span>콜롬비아 수프리모</span><span>6,500원</span></li>
+					<li><span>케냐 AA</span><span>7,000원</span></li>
 				</ul>
 			</div>
 
 			<div class="menu-cat">
-				<p class="menu-cat__tag">Fruité &amp; gourmand</p>
-				<h3>Fruity Matcha Series</h3>
+				<p class="menu-cat__tag">Espresso</p>
+				<h3>에스프레소 커피</h3>
 				<ul>
-					<li><span>Matcha-Ade Fraise</span><span>5,80 €</span></li>
-					<li><span>Matcha-Ade Framboise</span><span>5,80 €</span></li>
-					<li><span>Matcha-Ade Mangue</span><span>5,80 €</span></li>
-					<li><span>Matcha Mangue frappé</span><span>6,20 €</span></li>
+					<li><span>아메리카노</span><span>4,500원</span></li>
+					<li><span>카페라떼</span><span>5,000원</span></li>
+					<li><span>카푸치노</span><span>5,000원</span></li>
+					<li><span>바닐라라떼</span><span>5,500원</span></li>
 				</ul>
 			</div>
 
 			<div class="menu-cat">
-				<p class="menu-cat__tag">Rafraîchissant</p>
-				<h3>Milk &amp; -Ade Series</h3>
+				<p class="menu-cat__tag">Cold Brew</p>
+				<h3>더치 &amp; 콜드브루</h3>
 				<ul>
-					<li><span>Lait Fraise</span><span>4,60 €</span></li>
-					<li><span>Lait Vanille</span><span>4,60 €</span></li>
-					<li><span>Lemon-Ade</span><span>4,80 €</span></li>
-					<li><span>Fraise-Ade</span><span>4,80 €</span></li>
+					<li><span>더치커피</span><span>6,000원</span></li>
+					<li><span>콜드브루</span><span>5,500원</span></li>
+					<li><span>콜드브루 라떼</span><span>6,000원</span></li>
 				</ul>
 			</div>
 
 			<div class="menu-cat">
-				<p class="menu-cat__tag">Sans matcha</p>
-				<h3>Café &amp; classiques</h3>
+				<p class="menu-cat__tag">Ade &amp; Tea</p>
+				<h3>에이드 &amp; 티</h3>
 				<ul>
-					<li><span>Espresso</span><span>2,50 €</span></li>
-					<li><span>Cappuccino</span><span>4,00 €</span></li>
-					<li><span>Latte</span><span>4,20 €</span></li>
-					<li><span>Chocolat chaud</span><span>4,20 €</span></li>
+					<li><span>자몽에이드</span><span>5,500원</span></li>
+					<li><span>레몬에이드</span><span>5,500원</span></li>
+					<li><span>얼그레이 티</span><span>5,000원</span></li>
 				</ul>
 			</div>
 
 			<div class="menu-cat">
-				<p class="menu-cat__tag">Fait maison</p>
-				<h3>Pâtisseries &amp; douceurs</h3>
+				<p class="menu-cat__tag">Dessert</p>
+				<h3>디저트</h3>
 				<ul>
-					<li><span>Cookie maison</span><span>3,20 €</span></li>
-					<li><span>Part de gâteau du jour</span><span>4,80 €</span></li>
-					<li><span>Croissant</span><span>2,50 €</span></li>
+					<li><span>수제 쿠키</span><span>3,500원</span></li>
+					<li><span>오늘의 케이크</span><span>6,500원</span></li>
+					<li><span>크로플</span><span>6,000원</span></li>
 				</ul>
 			</div>
 
 			<div class="menu-cat">
-				<p class="menu-cat__tag">Bon à savoir</p>
-				<h3>Options &amp; laits</h3>
+				<p class="menu-cat__tag">참고</p>
+				<h3>원두 구매</h3>
 				<ul>
-					<li><span>Lait d'avoine, soja, amande</span><span>+0,50 €</span></li>
-					<li><span>Shot de matcha supplémentaire</span><span>+1,00 €</span></li>
-					<li><span>Sirop maison au choix</span><span>+0,50 €</span></li>
+					<li><span>오늘의 원두는 미스터콩에서도 구매 가능</span><span>→</span></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="menu-note">
-			<p>Le menu complet et les prix sont disponibles sur place et par
-				téléphone au <a href="tel:+33100000000" class="link-arrow" style="margin:0;">01 00 00 00 00</a>.</p>
-			<a href="contact.html" class="btn btn--outline-ink btn--small">Nous trouver</a>
+			<p>전체 메뉴와 가격은 매장 및 전화 문의를 통해 확인하실 수 있습니다.
+				<a href="tel:031-576-0007" class="link-arrow" style="margin:0;">031-576-0007</a></p>
+			<a href="contact.html" class="btn btn--small">위치보기</a>
 		</div>
 	</div>
 </section>
 
-<footer class="site-footer">
-	<div class="wave-divider wave-divider--top" aria-hidden="true">
-		<svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,110 1080,-10 1440,60 L1440,100 L0,100 Z"></path></svg>
-	</div>
-
-	<div class="container footer-grid">
-		<div class="footer-col footer-brand">
-			<a href="index.html" class="brand">
-				<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
-					<ellipse cx="24" cy="41" rx="14" ry="3" fill="rgba(255,247,230,.15)"/>
-					<path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#FFD023" stroke="#FFF7E6" stroke-width="1.2"/>
-					<path d="M15 14h18l-1.6 8.5H16.6L15 14Z" fill="#7BA05D"/>
-				</svg>
-				<span class="brand-text">
-					<span class="brand-name">Shukery</span>
-					<span class="brand-tag">Coffee</span>
-				</span>
-			</a>
-			<p>Café &amp; matcha — boissons gourmandes et douceurs faites maison, dans une ambiance chaleureuse et moderne.</p>
-		</div>
-
-		<div class="footer-col">
-			<h4>Contact</h4>
-			<p>Adresse à venir</p>
-			<p><a href="tel:+33100000000">01 00 00 00 00</a></p>
-			<a class="link-arrow" href="contact.html">Nous trouver →</a>
-		</div>
-
-		<div class="footer-col">
-			<h4>Horaires</h4>
-			<ul class="hours-list">
-				<li><span>Lundi</span><span>8:00–18:00</span></li>
-				<li><span>Mardi</span><span>8:00–18:00</span></li>
-				<li><span>Mercredi</span><span>8:00–18:00</span></li>
-				<li><span>Jeudi</span><span>8:00–18:00</span></li>
-				<li><span>Vendredi</span><span>8:00–19:00</span></li>
-				<li><span>Samedi</span><span>9:00–19:00</span></li>
-				<li><span>Dimanche</span><span>9:00–17:00</span></li>
-			</ul>
-		</div>
-
-		<div class="footer-col">
-			<h4>Suivez-nous</h4>
-			<div class="social-row">
-				<a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
-					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.3c0-.87.24-1.46 1.5-1.46H16.6V4.14C16.3 4.1 15.3 4 14.1 4c-2.4 0-4.1 1.47-4.1 4.16V10.5H7.5v3H10V21h3.5z"/></svg>
-				</a>
-				<a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
-					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.8.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.63.42 1.36.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.07-.22 1.8-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.07-.05-1.8-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.07.22-1.8.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.08.28 6.81.11 7.88.06 8.95.01 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z" transform="translate(0 2)"/></svg>
-				</a>
-			</div>
-			<a class="btn btn--outline btn--small" href="contact.html">Nous trouver</a>
-		</div>
-	</div>
-
-	<div class="footer-bottom container">
-		<p>© 2026 Shukery Coffee. Tous droits réservés.</p>
+<footer class="mission-footer">
+	<div class="container">
+		<img class="mission-footer__icon" src="assets/footer-coffee.gif" alt="">
+		<p class="statement">미스터콩이 엄선한 좋은 원두와, 정성스레 내린 한 잔의 커피가 — 저희가 준비한 아름다운 공간 안에서 소중한 경험이 되기를 바랍니다.</p>
+		<a href="https://mrkong.co.kr/main/index" target="_blank" rel="noopener" class="btn btn--outline-cream">미스터콩 쇼핑몰 바로가기</a>
+		<p class="footer-info">주소: 경기도 남양주시 조안면 다산로 566-3<span>|</span>TEL. <a href="tel:031-576-0007">031-576-0007</a></p>
+		<p class="footer-copy">COPYRIGHT © BARABODA. ALL RIGHTS RESERVED.</p>
 	</div>
 </footer>
 
