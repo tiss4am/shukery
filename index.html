@@ -1,331 +1,229 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="fr">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>바라보다 BARABODA</title>
-	<meta name="description" content="커피를 향한 우리의 사랑은 온라인에서만 머무르지 않습니다. 미스터콩의 카페, 바라보다.">
-	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%23F1EFEB'/%3E%3Ctext x='50%25' y='58%25' font-size='24' text-anchor='middle'%3E☕%3C/text%3E%3C/svg%3E">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-	<link rel="stylesheet" href="style.css">
+	<title>Shukery Coffee — Café de spécialité à Paris</title>
+	<meta name="description" content="Shukery Coffee — café de spécialité et pâtisseries maison, 18 avenue de l'Opéra, Paris.">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23FFD023'/%3E%3Cpath d='M12 15h24l-2.6 20A5 5 0 0 1 28.5 39h-9a5 5 0 0 1-4.9-4L12 15Z' fill='%237BA05D'/%3E%3C/svg%3E">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="home.css">
 </head>
 
 <body>
 
-	<a href="https://mrkong.co.kr/main/index" target="_blank" rel="noopener" class="shop-banner">
-		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-		미스터콩 쇼핑몰
-	</a>
-
 	<header class="site-header">
 		<nav class="navbar" id="navbar">
-			<a href="index.html" class="brand">
-				<img src="assets/logo.svg" alt="바라보다 BARABODA">
+			<a href="#accueil" class="brand">
+				<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+					<ellipse cx="24" cy="41" rx="14" ry="3" fill="#D9D5CB"/>
+					<path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#FFD023" stroke="#2B2B2B" stroke-width="1.5"/>
+					<path d="M15 14c0-4.5 4-7 9-7s9 2.5 9 7" stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+					<path d="M15 14h18l-1.6 8.5H16.6L15 14Z" fill="#7BA05D"/>
+					<path d="M19.5 16.5c1 1.6 2.4 1.6 3.4 0 1 1.6 2.4 1.6 3.6-.1" stroke="#fff" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+				</svg>
+				<span class="brand-text">
+					<span class="brand-name">Shukery</span>
+					<span class="brand-tag">Coffee</span>
+				</span>
 			</a>
 
-			<button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+			<button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
 				<span></span><span></span><span></span>
 			</button>
 
 			<ul class="nav-links" id="navLinks">
-				<li><a href="index.html">홈</a></li>
-				<li><a href="index.html#intro">프롤로그</a></li>
-				<li><a href="menu.html">메뉴안내</a></li>
-				<li><a href="index.html#universe">소통공간</a></li>
-				<li><a href="galerie.html">둘러보기</a></li>
-				<li><a href="contact.html">위치안내</a></li>
-			</ul>
-
-			<ul class="mega-menu">
-				<li>
-					<a href="index.html#intro">바라보다 소개</a>
-					<ul class="mega-dropdown">
-						<li><a href="index.html#intro">프롤로그</a></li>
-						<li><a href="index.html#intro">브랜드 이야기</a></li>
-						<li><a href="index.html#browse">둘러보기</a></li>
-						<li><a href="contact.html">위치안내</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="menu.html">메뉴안내</a>
-					<ul class="mega-dropdown">
-						<li><a href="menu.html">메뉴보기</a></li>
-						<li><a href="index.html#coffee-day">오늘의 커피</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="index.html#universe">소통공간</a>
-					<ul class="mega-dropdown">
-						<li><a href="index.html#universe" data-tab="roasting">오늘의 로스팅</a></li>
-						<li><a href="index.html#universe" data-tab="story">커피이야기</a></li>
-						<li><a href="index.html#universe" data-tab="all">거닐다</a></li>
-						<li><a href="index.html#universe" data-tab="all">고객후기</a></li>
-						<li><a href="index.html#universe" data-tab="all">공지사항</a></li>
-						<li><a href="index.html#universe" data-tab="all">행사&amp;이벤트</a></li>
-					</ul>
-				</li>
-				<li><a href="contact.html">바램봄</a></li>
+				<li><a href="#accueil">Accueil</a></li>
+				<li><a href="#apropos">À propos</a></li>
+				<li><a href="#horaires">Horaires &amp; Adresse</a></li>
+				<li><a href="#instagram">Instagram</a></li>
+				<li><a href="#rejoindre">Nous rejoindre</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<!-- ================= 비쥬얼 (HERO SLIDER) ================= -->
-	<section class="hero-slider" id="heroSlider">
-		<div class="hero-slide is-active">
-			<img src="assets/main-visual-01.jpg" alt="바라보다 카페 전경">
-			<div class="hero-slide-caption">
-				<img src="assets/main-visual-typo.png" alt="바라보다">
-				<p>커피를 향한 우리의 사랑은<br>온라인에서만 머무르지 않습니다.<br>오히려 더 커져갑니다.</p>
-			</div>
-		</div>
-		<div class="hero-slide">
-			<img src="assets/main-visual-02.jpg" alt="바라보다 내부 전경">
-			<div class="hero-slide-caption">
-				<img src="assets/main-visual-typo.png" alt="바라보다">
-				<p>많은 사람들의 발길이 멈춰 서는 이곳,<br>모두가 함께 추억이 되는 공간</p>
-			</div>
-		</div>
-		<div class="hero-slide">
-			<img src="assets/main-visual-03.jpg" alt="능내역 전경">
-			<div class="hero-slide-caption">
-				<img src="assets/main-visual-typo.png" alt="바라보다">
-				<p>아름다운 공간, 좋은 커피한잔과 함께<br>소중한 경험을.<br>이곳, 바로여기. 바라보다에서</p>
-			</div>
-		</div>
-		<div class="hero-slide">
-			<img src="assets/main-visual-04.jpg" alt="바라보다 정원">
-			<div class="hero-slide-caption">
-				<img src="assets/main-visual-typo.png" alt="바라보다">
-				<p>편안한 휴식을 제안하고<br>색다른 경험을 제공합니다.<br>가장 세련된 공간에서<br>가장 아날로그적인 감성을 바라보다.</p>
-			</div>
-		</div>
-		<div class="hero-slide">
-			<img src="assets/main-visual-05.jpg" alt="바라보다 내부">
-			<div class="hero-slide-caption">
-				<img src="assets/main-visual-typo.png" alt="바라보다">
-				<p>세상 밖으로 나온 커피,<br>세상과 함께하는 카페<br>바라다. 보다. 그리고 바라보다</p>
-			</div>
-		</div>
-		<div class="hero-slide">
-			<img src="assets/main-visual-06.jpg" alt="바라보다 좌석">
-			<div class="hero-slide-caption">
-				<img src="assets/main-visual-typo.png" alt="바라보다">
-				<p>커피를 향한 관심과<br>사랑이 있는 문화를 제안합니다.<br>시작은 미스터 였지만 완성은 마스터입니다.</p>
-			</div>
-		</div>
-		<div class="hero-slide">
-			<img src="assets/main-visual-07.jpg" alt="바라보다 건물 외관과 조형물">
-			<div class="hero-slide-caption">
-				<img src="assets/main-visual-typo.png" alt="바라보다">
-				<p>모던하고 심플한 인테리어<br>그리고 감각적인 조형물과<br>함께하는 바라보다</p>
-			</div>
-		</div>
-
-		<div class="hero-slider-controls">
-			<button class="hero-slider-arrow" id="heroPrev" aria-label="이전">‹</button>
-			<div class="hero-slider-pager" id="heroPager"></div>
-			<button class="hero-slider-arrow" id="heroNext" aria-label="다음">›</button>
-		</div>
-	</section>
-
-	<!-- ================= 바라보다 소개 ================= -->
-	<section class="main-section" id="intro">
-		<div class="main-section__head">
-			<h2 class="main-section__title">바라보다 소개</h2>
-			<p class="main-section__desc">저희의 커피를 향한 사랑은 온라인에서만 머무르지 않습니다. 오히려 더 커져갑니다.<br>카페바가 아닌, 미스터콩의 노하우가 담긴 좋은 원두와 카페 레시피로 여러분을 오프라인에서 만나기 위해 만든 공간, 미스터콩의 카페입니다.</p>
-		</div>
-		<div class="intro-list-grid">
-			<a href="index.html#intro" class="intro-list-item">
-				<figure><img src="assets/main-intro-epilogue.gif" alt="프롤로그"></figure>
-				<span>프롤로그</span>
-			</a>
-			<a href="menu.html" class="intro-list-item">
-				<figure><img src="assets/main-intro-menu.gif" alt="메뉴안내"></figure>
-				<span>메뉴안내</span>
-			</a>
-			<a href="contact.html" class="intro-list-item">
-				<figure><img src="assets/main-intro-location.gif" alt="위치안내"></figure>
-				<span>위치안내</span>
-			</a>
-			<a href="index.html#browse" class="intro-list-item">
-				<figure><img src="assets/main-intro-tour.gif" alt="주변관광지"></figure>
-				<span>주변관광지</span>
-			</a>
-		</div>
-	</section>
-
-	<div class="line-divider"><img src="assets/icon-line-primary.png" alt=""></div>
-
-	<!-- ================= 오늘의 커피 ================= -->
-	<section class="main-section coffee-day" id="coffee-day">
-		<div class="main-section__head">
-			<h2 class="main-section__title">오늘의 커피</h2>
-			<p class="main-section__desc">오늘 준비된 커피의 원두는 미스터콩에서도 구매하실 수 있습니다.</p>
-		</div>
-		<div class="coffee-day__body">
-			<div class="coffee-day__info">
-				<b class="coffee-day__name">Ethiopia Yirgacheffe Parasala</b>
-				<ul class="coffee-day__list">
-					<li><b>농장</b><span>Parasala</span></li>
-					<li><b>지역</b><span>Yirgacheffe</span></li>
-					<li><b>품종</b><span>에티오피아 (Heirloom)</span></li>
-					<li><b>가공</b><span>내추럴 프로세싱</span></li>
-					<li><b>로스팅</b><span>2017.04.03</span></li>
-					<li><b>컵노트</b><span>라즈베리, 코코아, 라운드, 크리미, 롱피니시</span></li>
-				</ul>
-				<a href="https://mrkong.co.kr/main/index" target="_blank" rel="noopener" class="btn">구매하기</a>
-			</div>
-		</div>
-	</section>
-
-	<div class="line-divider"><img src="assets/icon-line-primary.png" alt=""></div>
-
-	<!-- ================= 둘러보기 ================= -->
-	<section class="main-section browse" id="browse">
-		<div class="main-section__head">
-			<h2 class="main-section__title">둘러보기</h2>
-		</div>
-		<div class="browse-slider-wrap">
-			<div class="browse-slider" id="browseSlider">
-				<div class="browse-slide is-active"><img src="assets/main-around-01.jpg" alt="바라보다 내부 01"></div>
-				<div class="browse-slide"><img src="assets/main-around-02.jpg" alt="바라보다 내부 02"></div>
-				<div class="browse-slide"><img src="assets/main-around-03.jpg" alt="바라보다 내부 03"></div>
-				<div class="browse-slide"><img src="assets/main-around-04.jpg" alt="바라보다 내부 04"></div>
-				<div class="browse-slide"><img src="assets/main-around-05.jpg" alt="바라보다 내부 05"></div>
-				<div class="browse-slide"><img src="assets/main-around-06.jpg" alt="바라보다 내부 06"></div>
-				<div class="browse-slide"><img src="assets/main-around-07.jpg" alt="바라보다 내부 07"></div>
-				<div class="browse-slide"><img src="assets/main-around-08.jpg" alt="바라보다 내부 08"></div>
-				<div class="browse-slide"><img src="assets/main-around-09.jpg" alt="바라보다 내부 09"></div>
-
-				<button class="browse-arrow browse-arrow--prev" id="browsePrev" aria-label="이전">‹</button>
-				<button class="browse-arrow browse-arrow--next" id="browseNext" aria-label="다음">›</button>
-				<div class="browse-slider-controls" id="browsePager"></div>
-			</div>
-		</div>
-		<div class="browse-cta">
-			<a href="galerie.html" class="btn">더보기</a>
-		</div>
-	</section>
-
-	<!-- ================= 인스타그램 ================= -->
-	<section class="main-section insta-strip">
-		<div class="main-section__head" style="padding-bottom:0;">
-			<h2 class="main-section__title">Instagram</h2>
-			<p style="margin-top:18px;">인스타그램에서 바라보다의 소식을 만나보세요.</p>
-			<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="link-arrow">@baraboda_official</a>
-		</div>
-	</section>
-
-	<div class="line-divider"><img src="assets/icon-line-secondary.png" alt=""></div>
-
-	<!-- ================= 소통공간 ================= -->
-	<section class="main-section universe" id="universe">
-		<div class="main-section__head">
-			<h2 class="main-section__title">소통공간</h2>
-			<p class="main-section__desc">저희의 커피를 향한 사랑은 온라인에서만 머무르지 않습니다. 오히려 더 커져갑니다.</p>
-		</div>
-
-		<div class="universe-tabs" id="universeTabs">
-			<button class="is-active" data-tab="all">전체보기</button>
-			<button data-tab="story">커피이야기</button>
-			<button data-tab="roasting">오늘의 로스팅</button>
-		</div>
-
-		<div class="universe-grid" id="universeGrid">
-			<article class="universe-card universe-card--text" data-cat="etc">
-				<div>
-					<span class="universe-card__cat">행사&amp;이벤트</span>
-					<h4 style="margin-top:10px;">5월 8일 어버이날을 맞아, 부모님과 함께 방문하시는 분들께 아메리카노를 무료로 드립니다!</h4>
+	<!-- ================= HERO ================= -->
+	<section class="hero" id="accueil">
+		<div class="container hero-grid">
+			<div class="hero-copy">
+				<p class="eyebrow">Shukery Coffee · Coffee Shop</p>
+				<h1 class="hero-title">Good <span style="color:var(--green-dark);">matcha</span>,<br>good <span style="color:var(--yellow-dark);">mood</span>.</h1>
+				<p class="hero-text">Café de spécialité et pâtisseries maison au cœur de Paris — matcha premium, cafés soigneusement sélectionnés et douceurs faites sur place, à deux pas de l'Opéra.</p>
+				<div class="hero-actions">
+					<a href="#horaires" class="btn btn--ink">Nous trouver</a>
+					<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" class="btn btn--outline">
+						<svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;margin-right:8px;"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.8.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.63.42 1.36.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.07-.22 1.8-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.07-.05-1.8-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.07.22-1.8.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.08.28 6.81.11 7.88.06 8.95.01 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z" transform="translate(0 2)"/></svg>
+						@shukerycoffee
+					</a>
 				</div>
-			</article>
-			<a href="#" class="universe-card" data-cat="etc">
-				<div class="universe-card__thumb"><img src="assets/tour-thumb.jpg" alt="능내역"></div>
-				<span class="universe-card__cat">주변관광지</span>
-				<h4>능내역</h4>
-				<p>정겨운 시절을 만나는 시골 간이역. 서울 청량리와 경북 안동을 잇던 중앙선 열차가 다니던 능내역은, 경기도 남양주시 조안면 능내1리에 위치해 있습니다 [...]</p>
-			</a>
-			<a href="#" class="universe-card" data-cat="etc">
-				<div class="universe-card__thumb"><img src="assets/tour-thumb-03-1.jpg" alt="다산생태공원"></div>
-				<span class="universe-card__cat">주변관광지</span>
-				<h4>다산생태공원</h4>
-				<p>사계절 내내 특별하고 낭만적인 다산생태공원은 드라마 촬영지로도 사랑받는 곳입니다. 능내리 일원 16만 7천㎡ 부지에 조성된 생태공원을 거닐어보세요 [...]</p>
-			</a>
-			<a href="#" class="universe-card" data-cat="etc">
-				<div class="universe-card__thumb"><img src="assets/tour-thumb-02.jpg" alt="다산유적지"></div>
-				<span class="universe-card__cat">주변관광지</span>
-				<h4>다산유적지</h4>
-				<p>다산 정약용의 마지막 여정, 마재 다산유적지. 양수리에서 팔당댐 방향으로 약 3km 지점, 마재마을에는 다산 정약용 선생의 묘와 생가터가 자리하고 있습니다 [...]</p>
-			</a>
-			<a href="#" class="universe-card" data-cat="story">
-				<div class="universe-card__thumb"><img src="assets/coffee-thumb-02.jpg" alt="커피는 정말 뼈 건강에 해로울까?"></div>
-				<span class="universe-card__cat">커피이야기</span>
-				<h4>커피는 정말 뼈 건강에 해로울까?</h4>
-				<p>커피의 두 얼굴? 많은 사람들의 사랑을 받으며 함께 성장해온 커피이지만, 그만큼 걱정과 우려의 목소리도 늘 함께합니다. 커피와 관련된 연구와 논의는 끊임없이 이어지고 있는데요 [...]</p>
-			</a>
-			<a href="#" class="universe-card" data-cat="story">
-				<div class="universe-card__thumb"><img src="assets/story-rainy-thumb-08.jpg" alt="더치커피 이야기"></div>
-				<span class="universe-card__cat">커피이야기</span>
-				<h4>더치커피 이야기</h4>
-				<p>네덜란드 사람들도 잘 모르는 더치커피 이야기. '더치'는 네덜란드 사람을 가리키는 말입니다. 17세기, 동인도회사를 세우며 세계 최고의 무역국가로 떠올랐던 그들의 이야기 [...]</p>
-			</a>
-			<a href="#" class="universe-card" data-cat="story">
-				<div class="universe-card__thumb"><img src="assets/coffee-thumb-03.jpg" alt="졸음퇴치 Coffee Nap을 아시나요?"></div>
-				<span class="universe-card__cat">커피이야기</span>
-				<h4>졸음퇴치, Coffee Nap을 아시나요?</h4>
-				<p>커피와 낮잠의 콜라보레이션. Coffee nap은 커피를 마신 후 바로 20분 미만의 짧은 낮잠을 자는 것을 뜻합니다. 2014년 영국 러프버러 수면연구센터의 실험 결과가 그 시작이었죠 [...]</p>
-			</a>
-			<a href="#" class="universe-card" data-cat="story">
-				<div class="universe-card__thumb"><img src="assets/story-rainy-thumb-03.jpg" alt="카페오레 이야기"></div>
-				<span class="universe-card__cat">커피이야기</span>
-				<h4>커피와 우유의 부드러운 만남, 카페오레 이야기</h4>
-				<p>프랑스의 아침을 깨워온 그 맛과 향. 에스프레소가 나오기 전부터 지금까지, 카페오레는 프랑스의 가장 대중적인 아침 식단 중 하나로 사랑받아 왔습니다 [...]</p>
-			</a>
-			<a href="#" class="universe-card" data-cat="story">
-				<div class="universe-card__thumb"><img src="assets/story-rainy-thumb-05.jpg" alt="커피하우스 이야기"></div>
-				<span class="universe-card__cat">커피이야기</span>
-				<h4>커피하우스 이야기</h4>
-				<p>커피, 문화와 소통의 발전에 기여하다! 카페는 단순히 커피만 마시고 일어서는 장소가 아닙니다. 사람과 사람, 사람과 공간이 교감하는 자리이기도 합니다 [...]</p>
-			</a>
-			<a href="#" class="universe-card" data-cat="story">
-				<div class="universe-card__thumb"><img src="assets/coffee-story-thumb.jpg" alt="커피에 관한 역사 속 예찬들"></div>
-				<span class="universe-card__cat">커피이야기</span>
-				<h4>커피에 관한 역사 속 예찬들</h4>
-				<p>GOOD TO THE LAST DROP, 마지막 한 방울까지 맛있다. 맥스웰하우스의 대표 캐치프레이즈로 알려진 이 말은, 루즈벨트 대통령이 커피를 마신 후 남긴 감탄이었다고 전해집니다 [...]</p>
-			</a>
+				<ul class="hero-meta">
+					<li>
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+						18 avenue de l'Opéra, 75001 Paris
+					</li>
+					<li>
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+						Ouvert aujourd'hui — voir les horaires
+					</li>
+				</ul>
+			</div>
+			<div class="hero-visual">
+				<div class="hero-blob" aria-hidden="true"></div>
+				<svg viewBox="0 0 200 260" fill="none">
+					<ellipse cx="100" cy="230" rx="46" ry="8" fill="rgba(43,43,43,.12)"/>
+					<path d="M56 90 L144 90 L133 220a13 13 0 0 1-13 12H83a13 13 0 0 1-13-12L56 90Z" fill="#FFFDF8" stroke="#2B2B2B" stroke-width="2"/>
+					<path d="M59.5 90h81l-5 55h-71l-5-55Z" fill="#7BA05D"/>
+					<ellipse cx="100" cy="90" rx="48" ry="11" fill="#FFD023" stroke="#2B2B2B" stroke-width="2"/>
+					<path d="M65 90a35 20 0 0 1 70 0" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+					<rect x="93" y="20" width="11" height="72" rx="5.5" fill="#FFD023" stroke="#2B2B2B" stroke-width="2" transform="rotate(8 98 55)"/>
+				</svg>
+				<div class="hero-badge hero-badge--insta">
+					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.8.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.63.42 1.36.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.07-.22 1.8-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.07-.05-1.8-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.07.22-1.8.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.08.28 6.81.11 7.88.06 8.95.01 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z" transform="translate(0 2)"/></svg>
+					3 709 abonnés
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<div class="line-divider"><img src="assets/icon-line-primary.png" alt=""></div>
+	<!-- ================= À PROPOS ================= -->
+	<section class="section" id="apropos">
+		<div class="container about-grid">
+			<div class="about-blob">
+				<svg viewBox="0 0 200 260" fill="none">
+					<ellipse cx="100" cy="210" rx="46" ry="8" fill="#5F8047"/>
+					<path d="M52 60c0-14 20-24 48-24s48 10 48 24l-9 118a14 14 0 0 1-14 13H75a14 14 0 0 1-14-13L52 60Z" fill="#FFFDF8" stroke="#2B2B2B" stroke-width="2"/>
+					<path d="M60 78c14 6 66 6 80 0" stroke="#2B2B2B" stroke-width="1.6" fill="none" opacity=".4"/>
+					<ellipse cx="100" cy="60" rx="46" ry="13" fill="#FFD023" stroke="#2B2B2B" stroke-width="2"/>
+					<path d="M62 58c8-10 20-2 38-2s30-8 38 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+				</svg>
+			</div>
+			<div class="about-copy">
+				<p class="eyebrow">À propos</p>
+				<h2>Café de spécialité &amp; pâtisseries maison</h2>
+				<p class="lead">Chez Shukery, on sélectionne des cafés de spécialité avec la même exigence que notre matcha premium — fouetté à la main, sans amertume. Les pâtisseries sont préparées sur place chaque jour, pour une pause gourmande à toute heure, entre deux rendez-vous près de l'Opéra.</p>
+				<div class="about-tags">
+					<span>Café de spécialité</span>
+					<span>Matcha premium</span>
+					<span>Pâtisseries maison</span>
+					<span>Coffee Shop</span>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<!-- ================= 오시는 길 ================= -->
-	<section class="main-section directions" id="directions">
-		<div class="main-section__head">
-			<h2 class="main-section__title">오시는 길</h2>
-			<p class="main-section__desc">사람, 그리고 추억, 그리고 커피. 모든 것이 함께 추억이 되는 공간을 바라보다.</p>
+	<!-- ================= HORAIRES & ADRESSE ================= -->
+	<section class="section section--tint" id="horaires">
+		<div class="container">
+			<div class="section__head">
+				<p class="eyebrow eyebrow--center">Nous trouver</p>
+				<h2>Horaires &amp; Adresse</h2>
+			</div>
+			<div class="info-grid">
+				<div class="info-card">
+					<h3>
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+						Horaires d'ouverture
+					</h3>
+					<ul class="hours-list">
+						<li><span>Lundi – Jeudi</span><span>7h30 – 21h00</span></li>
+						<li><span>Vendredi</span><span>7h30 – 22h00</span></li>
+						<li><span>Samedi</span><span>10h00 – 22h00</span></li>
+						<li><span>Dimanche</span><span>10h00 – 21h00</span></li>
+					</ul>
+				</div>
+				<div class="info-card addr-block">
+					<h3>
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+						Adresse
+					</h3>
+					<p><strong>Shukery Coffee</strong><br>18 avenue de l'Opéra<br>75001 Paris, France</p>
+					<a href="https://www.google.com/maps/search/?api=1&query=18+avenue+de+l%27Op%C3%A9ra%2C+75001+Paris%2C+France" target="_blank" rel="noopener" class="btn btn--yellow btn--small">Itinéraire</a>
+					<div class="map-embed">
+						<iframe src="https://www.google.com/maps?q=18+avenue+de+l%27Op%C3%A9ra%2C+75001+Paris%2C+France&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Localisation de Shukery Coffee sur Google Maps"></iframe>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="directions-info">
-			<ul>
-				<li><b>영업시간</b>평일 11:00 - 22:00</li>
-				<li>금, 토요일은 23시까지 영업합니다.</li>
-			</ul>
-			<ul>
-				<li><b>전화번호</b><a href="tel:031-576-0007">031-576-0007</a></li>
-				<li><b>주소</b>경기도 남양주시 조안면 다산로 566-3</li>
-			</ul>
+	</section>
+
+	<!-- ================= INSTAGRAM ================= -->
+	<section class="section" id="instagram">
+		<div class="container">
+			<div class="section__head">
+				<p class="eyebrow eyebrow--center">Suivez-nous</p>
+				<h2>Sur Instagram</h2>
+			</div>
+			<div class="insta-card">
+				<p class="insta-handle">@shukerycoffee</p>
+				<p class="insta-cat">Coffee Shop · Paris</p>
+				<div class="insta-stats">
+					<div><b>101</b><span>publications</span></div>
+					<div><b>3 709</b><span>abonnés</span></div>
+					<div><b>14</b><span>abonnements</span></div>
+				</div>
+				<div class="insta-grid">
+					<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" class="tile--green">
+						<svg viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="41" rx="14" ry="3" fill="rgba(255,255,255,.25)"/><path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#fff"/><ellipse cx="24" cy="15.5" rx="8.5" ry="2.6" fill="#FFD023"/></svg>
+					</a>
+					<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" class="tile--yellow">
+						<svg viewBox="0 0 48 48" fill="none"><rect x="14" y="16" width="20" height="26" rx="4" fill="#fff"/><rect x="14" y="16" width="20" height="9" fill="#7BA05D"/><rect x="22" y="4" width="3" height="18" rx="1.5" fill="#2B2B2B" transform="rotate(6 23.5 13)"/></svg>
+					</a>
+					<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" class="tile--cream">
+						<svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" fill="#F0DFC0" stroke="#2B2B2B" stroke-width="1.5"/><circle cx="19" cy="20" r="1.6" fill="#5F8047"/><circle cx="27" cy="18" r="1.6" fill="#5F8047"/><circle cx="30" cy="27" r="1.6" fill="#5F8047"/><circle cx="20" cy="29" r="1.6" fill="#5F8047"/></svg>
+					</a>
+					<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" class="tile--green">
+						<svg viewBox="0 0 48 48" fill="none"><path d="M9 37 L24 11 L39 37 Z" fill="#F2C9CC" stroke="#2B2B2B" stroke-width="1.5" stroke-linejoin="round"/><path d="M14.5 37 L24 20 L33.5 37" fill="none" stroke="#2B2B2B" stroke-width="1.1" opacity=".3"/><circle cx="24" cy="8" r="3.2" fill="#fff" stroke="#2B2B2B" stroke-width="1.2"/></svg>
+					</a>
+				</div>
+				<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" class="btn btn--yellow">Voir le profil</a>
+			</div>
 		</div>
-		<a href="contact.html" class="btn">위치보기</a>
+	</section>
+
+	<!-- ================= NOUS REJOINDRE ================= -->
+	<section class="section section--cream2" id="rejoindre">
+		<div class="container">
+			<div class="join-card">
+				<h2>Envie de rejoindre l'équipe ?</h2>
+				<p>Shukery Coffee recrute ponctuellement en salle et en cuisine. Envoyez-nous une candidature spontanée, on revient vers vous rapidement.</p>
+				<a href="mailto:contact@shukerycoffee.fr?subject=Candidature%20spontanée" class="btn btn--yellow">Nous écrire</a>
+			</div>
+		</div>
 	</section>
 
 	<!-- ================= FOOTER ================= -->
-	<footer class="mission-footer">
-		<div class="container">
-			<img class="mission-footer__icon" src="assets/footer-coffee.gif" alt="">
-			<p class="statement">미스터콩이 엄선한 좋은 원두와, 정성스레 내린 한 잔의 커피가 — 저희가 준비한 아름다운 공간 안에서 소중한 경험이 되기를 바랍니다.</p>
-			<a href="https://mrkong.co.kr/main/index" target="_blank" rel="noopener" class="btn btn--outline-cream">미스터콩 쇼핑몰 바로가기</a>
-			<p class="footer-info">주소: 경기도 남양주시 조안면 다산로 566-3<span>|</span>TEL. <a href="tel:031-576-0007">031-576-0007</a></p>
-			<p class="footer-copy">COPYRIGHT © BARABODA. ALL RIGHTS RESERVED.</p>
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<div class="footer-col footer-brand">
+				<a href="#accueil" class="brand">
+					<svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+						<ellipse cx="24" cy="41" rx="14" ry="3" fill="rgba(255,247,230,.15)"/>
+						<path d="M12 14h24l-2.6 21.5A5 5 0 0 1 28.5 40h-9a5 5 0 0 1-4.9-4.5L12 14Z" fill="#FFD023" stroke="#FFF7E6" stroke-width="1.2"/>
+						<path d="M15 14h18l-1.6 8.5H16.6L15 14Z" fill="#7BA05D"/>
+					</svg>
+					<span class="brand-text">
+						<span class="brand-name">Shukery</span>
+						<span class="brand-tag">Coffee</span>
+					</span>
+				</a>
+				<p>Café de spécialité et pâtisseries maison, au cœur de Paris.</p>
+			</div>
+
+			<div class="footer-col">
+				<h4>Adresse</h4>
+				<p>18 avenue de l'Opéra<br>75001 Paris, France</p>
+			</div>
+
+			<div class="footer-col">
+				<h4>Suivez-nous</h4>
+				<p><a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener">@shukerycoffee</a></p>
+				<p><a href="mailto:contact@shukerycoffee.fr">contact@shukerycoffee.fr</a></p>
+			</div>
 		</div>
+		<div class="footer-bottom">© 2026 Shukery Coffee. Tous droits réservés.</div>
 	</footer>
 
 	<script src="script.js"></script>
