@@ -6,189 +6,200 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shukery Coffee — Café de spécialité, Paris</title>
 	<meta name="description" content="Shukery Coffee — café de spécialité et pâtisseries maison, 18 avenue de l'Opéra, Paris.">
-	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%23FFD023'/%3E%3Ctext x='50%25' y='58%25' font-size='24' text-anchor='middle'%3E☕%3C/text%3E%3C/svg%3E">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23FFD936'/%3E%3Cpath d='M12 15h24l-2.6 20A5 5 0 0 1 28.5 39h-9a5 5 0 0 1-4.9-4L12 15Z' fill='%23fff'/%3E%3C/svg%3E">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="sk-page">
 
-	<header class="site-header">
-		<nav class="navbar" id="navbar">
-			<a href="index.html" class="brand">
-				<img src="assets/shukery-logo.png" alt="Shukery Coffee">
-			</a>
-
-			<button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
-				<span></span><span></span><span></span>
-			</button>
-
-			<ul class="nav-links" id="navLinks">
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="index.html#apropos">À propos</a></li>
-				<li><a href="index.html#carte">Notre carte</a></li>
-				<li><a href="index.html#horaires">Horaires &amp; Adresse</a></li>
-				<li><a href="index.html#instagram">Instagram</a></li>
+	<header class="sk-header">
+		<nav class="sk-nav" id="navbar">
+			<ul class="sk-nav-links">
+				<li><a href="#accueil">Accueil</a></li>
+				<li><a href="#carte">Menu</a></li>
+				<li><a href="#histoire">Our Story</a></li>
 			</ul>
 
-			<ul class="mega-menu">
-				<li><a href="index.html#apropos">À propos</a></li>
-				<li><a href="index.html#carte">Notre carte</a></li>
-				<li><a href="index.html#horaires">Horaires &amp; Adresse</a></li>
-				<li><a href="index.html#instagram">Instagram</a></li>
-				<li><a href="index.html#rejoindre">Nous rejoindre</a></li>
+			<a href="#accueil" class="sk-brand">
+				<img src="assets/figma/logo-nav-white.png" alt="Shukery Coffee">
+			</a>
+
+			<ul class="sk-nav-links">
+				<li><a href="#rejoindre">Nous rejoindre</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+
+			<button class="sk-nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+				<span></span><span></span><span></span>
+			</button>
+			<ul class="nav-links" id="navLinks">
+				<li><a href="#accueil">Accueil</a></li>
+				<li><a href="#carte">Menu</a></li>
+				<li><a href="#histoire">Our Story</a></li>
+				<li><a href="#rejoindre">Nous rejoindre</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<!-- ================= HERO SLIDER ================= -->
-	<section class="hero-slider" id="heroSlider">
-		<div class="hero-slide is-active">
-			<img src="assets/shukery-real-1.jpg" alt="Machine espresso La Marzocco jaune et tableau des menus, Shukery Coffee">
-			<div class="hero-slide-caption">
-				<p>Café de spécialité,<br>matcha premium et recettes maison.</p>
+	<!-- ================= HERO ================= -->
+	<section class="sk-hero" id="accueil">
+		<img class="sk-hero-bg" src="assets/figma/hero-bg-photo.png" alt="">
+		<div class="sk-hero-inner">
+			<div class="sk-hero-copy">
+				<h1 class="sk-hero-title">Coffee, matcha &amp; homemade pastry</h1>
+				<p class="sk-hero-sub">Great coffee, good vibes and a little reward for your daily ritual.</p>
+				<div class="sk-hero-actions">
+					<a href="#carte" class="sk-btn sk-btn--white">Le Menu</a>
+					<a href="#histoire" class="sk-btn sk-btn--outline">Notre Histoire</a>
+				</div>
+			</div>
+			<div class="sk-hero-visual">
+				<img src="assets/figma/hero-storefront.png" alt="Façade illustrée du café Shukery, 18, avenue de l'Opéra">
 			</div>
 		</div>
-		<div class="hero-slide">
-			<img src="assets/shukery-real-2.jpg" alt="Vitrine de sandos, cookies et pâtisseries maison, Shukery Coffee">
-			<div class="hero-slide-caption">
-				<p>Sandos, cookies et pâtisseries,<br>préparés chaque jour sur place.</p>
-			</div>
-		</div>
-		<div class="hero-slide">
-			<img src="assets/shukery-real-3.jpg" alt="Intérieur et comptoir de Shukery Coffee avec clients">
-			<div class="hero-slide-caption">
-				<p>Un lieu pour se poser,<br>au cœur de Paris.</p>
-			</div>
-		</div>
-
-		<div class="hero-slider-controls">
-			<button class="hero-slider-arrow" id="heroPrev" aria-label="Précédent">‹</button>
-			<div class="hero-slider-pager" id="heroPager"></div>
-			<button class="hero-slider-arrow" id="heroNext" aria-label="Suivant">›</button>
+		<div class="sk-hero-curve" aria-hidden="true">
+			<svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60 Z"></path></svg>
 		</div>
 	</section>
 
-	<!-- ================= À PROPOS ================= -->
-	<section class="main-section" id="apropos">
-		<div class="main-section__head">
-			<h2 class="main-section__title">À propos</h2>
-			<p class="main-section__desc">Shukery Coffee, c'est un café de spécialité niché avenue de l'Opéra — matcha premium fouetté à la main, cafés soigneusement sélectionnés et pâtisseries maison préparées chaque jour sur place. Un lieu pensé pour une pause gourmande, entre deux rendez-vous ou pour prendre le temps.</p>
-		</div>
-		<div class="intro-list-grid">
-			<a href="index.html#apropos" class="intro-list-item">
-				<figure style="display:flex;align-items:center;justify-content:center;background:#F1EFEB;">
-					<svg viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="1.6" width="42" height="42"><path d="M12 2c-4 3-7 7-7 11a7 7 0 0 0 14 0c0-4-3-8-7-11Z"/></svg>
-				</figure>
-				<span>À propos</span>
-			</a>
-			<a href="index.html#carte" class="intro-list-item">
-				<figure style="display:flex;align-items:center;justify-content:center;background:#F1EFEB;">
-					<svg viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="1.6" width="42" height="42"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
-				</figure>
-				<span>Notre carte</span>
-			</a>
-			<a href="index.html#horaires" class="intro-list-item">
-				<figure style="display:flex;align-items:center;justify-content:center;background:#F1EFEB;">
-					<svg viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="1.6" width="42" height="42"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-				</figure>
-				<span>Horaires &amp; Adresse</span>
-			</a>
-			<a href="index.html#instagram" class="intro-list-item">
-				<figure style="display:flex;align-items:center;justify-content:center;background:#F1EFEB;">
-					<svg viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="1.6" width="42" height="42"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-				</figure>
-				<span>Instagram</span>
-			</a>
-		</div>
-	</section>
-
-	<div class="line-divider"><img src="assets/icon-line-primary.png" alt=""></div>
-
-	<!-- ================= NOTRE CARTE ================= -->
-	<section class="main-section coffee-day" id="carte">
-		<div class="main-section__head">
-			<h2 class="main-section__title">Notre carte</h2>
-			<p class="main-section__desc">Un aperçu de ce qui vous attend au comptoir.</p>
-		</div>
-		<div class="coffee-day__body" style="justify-content:center;">
-			<div class="coffee-day__info" style="max-width:480px;">
-				<b class="coffee-day__name">Espresso</b>
-				<ul class="coffee-day__list">
-					<li><b>Filtre &amp; Americano</b><span>3 €</span></li>
-					<li><b>Latte &amp; Cappuccino</b><span>4 €</span></li>
-					<li><b>Flat White</b><span>5,5 €</span></li>
-					<li><b>Mocha</b><span>5,5 €</span></li>
-					<li><b>Chocolat chaud</b><span>6 €</span></li>
-					<li><b>Chai latte</b><span>6 €</span></li>
-				</ul>
-				<b class="coffee-day__name" style="margin-top:10px;">Matcha &amp; boissons fraîches</b>
-				<ul class="coffee-day__list">
-					<li><b>Matcha Latte Series</b><span>—</span></li>
-					<li><b>Matcha-Ade Series</b><span>—</span></li>
-					<li><b>Fruity Milk Series</b><span>—</span></li>
-					<li><b>Thé, jus d'orange pressé</b><span>—</span></li>
-				</ul>
-				<b class="coffee-day__name" style="margin-top:10px;">Sur place</b>
-				<ul class="coffee-day__list">
-					<li><b>Sandos</b><span>maison</span></li>
-					<li><b>Cookies &amp; cinnamon roll</b><span>maison</span></li>
-				</ul>
+	<!-- ================= NOTRE HISTOIRE ================= -->
+	<section class="sk-histoire" id="histoire">
+		<div class="sk-container">
+			<h2>NOTRE HISTOIRE</h2>
+			<div class="sk-histoire-grid">
+				<div class="sk-histoire-item">
+					<img src="assets/figma/icon-cup.png" alt="">
+					<div>
+						<h4>Du matcha aux boissons signature, à chacun son rituel.</h4>
+						<p>Des classiques revisités et des créations originales, préparées à la minute.</p>
+					</div>
+				</div>
+				<div class="sk-histoire-item">
+					<img src="assets/figma/icon-whisk.png" alt="">
+					<div>
+						<h4>Matcha de spécialité, des saveurs qui restent.</h4>
+						<p>Du matcha soigneusement sélectionné et préparé avec précision pour révéler des notes végétales, douces et délicatement amères.</p>
+					</div>
+				</div>
+				<div class="sk-histoire-item">
+					<img src="assets/figma/icon-pastry.png" alt="">
+					<div>
+						<h4>Pâtisseries maison, tous les jours.</h4>
+						<p>Des douceurs fraîchement préparées pour accompagner votre café, votre matcha ou simplement votre envie.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<div class="line-divider"><img src="assets/icon-line-secondary.png" alt=""></div>
-
-	<!-- ================= HORAIRES & ADRESSE ================= -->
-	<section class="main-section directions" id="horaires">
-		<div class="main-section__head">
-			<h2 class="main-section__title">Horaires &amp; Adresse</h2>
-			<p class="main-section__desc">Café de spécialité et pâtisseries maison, au cœur de Paris.</p>
+	<!-- ================= PROMO NOUVEAUTÉS ================= -->
+	<section class="sk-promo" id="carte">
+		<div class="sk-promo-inner" style="background-image:url('assets/figma/paper-texture.png');">
+			<div class="sk-promo-text">
+				<img src="assets/figma/logo-small.png" alt="Shukery Coffee">
+				<h3>Nouveautés chez Shukery</h3>
+				<a href="menu.html" class="sk-btn sk-btn--yellow-lg">
+					Découvrir le menu
+					<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg>
+				</a>
+			</div>
+			<div class="sk-promo-visual">
+				<div class="sk-promo-product">
+					<span class="sk-promo-label">Lattee Tiramisu</span>
+					<img class="sk-shadow" src="assets/figma/ellipse2.svg" alt="">
+					<img class="sk-cup" src="assets/figma/latte-tiramisu.png" alt="Latte Tiramisu glacé">
+					<img class="sk-sprinkle sk-sprinkle--left" src="assets/figma/coffee-sprinkle.png" alt="">
+				</div>
+				<div class="sk-promo-product">
+					<span class="sk-promo-label">Matcha Tiramisu</span>
+					<img class="sk-shadow" src="assets/figma/ellipse1.svg" alt="">
+					<img class="sk-cup" src="assets/figma/matcha-tiramisu.png" alt="Matcha Tiramisu glacé">
+					<img class="sk-sprinkle sk-sprinkle--right" src="assets/figma/matcha-sprinkle.png" alt="">
+				</div>
+			</div>
 		</div>
-		<div class="directions-info">
-			<ul>
-				<li><b>Lundi – Jeudi</b>7h30 – 21h00</li>
-				<li><b>Vendredi</b>7h30 – 22h00</li>
-				<li><b>Samedi</b>10h00 – 22h00</li>
-				<li><b>Dimanche</b>10h00 – 21h00</li>
-			</ul>
-			<ul>
-				<li><b>Adresse</b>18 avenue de l'Opéra, 75001 Paris</li>
-				<li><b>Catégorie</b>Coffee Shop</li>
+	</section>
+
+	<!-- ================= HORAIRES & NOUS TROUVER ================= -->
+	<section class="sk-info" id="horaires">
+		<div>
+			<h2>Horaires</h2>
+			<ul class="sk-hours">
+				<li><span>Lundi</span><span>7h30 — 21h00</span></li>
+				<li><span>Mardi</span><span>7h30 — 21h00</span></li>
+				<li><span>Mercredi</span><span>7h30 — 21h00</span></li>
+				<li><span>Jeudi</span><span>7h30 — 21h00</span></li>
+				<li><span>Vendredi</span><span>7h30 — 22h00</span></li>
+				<li><span>Samedi</span><span>10h00 — 22h00</span></li>
+				<li><span>Dimanche</span><span>10h00 — 21h00</span></li>
 			</ul>
 		</div>
-		<a href="https://www.google.com/maps/search/?api=1&query=18+avenue+de+l%27Op%C3%A9ra%2C+75001+Paris%2C+France" target="_blank" rel="noopener" class="btn">Voir l'itinéraire</a>
+		<div class="sk-find" id="contact">
+			<h2>Nous trouver</h2>
+			<address>
+				<span class="name">Shukery Coffee</span>
+				<span class="addr">18 avenue de l'Opéra, 75001 Paris</span>
+			</address>
+			<a href="https://www.google.com/maps/search/?api=1&query=18+avenue+de+l%27Op%C3%A9ra%2C+75001+Paris%2C+France" target="_blank" rel="noopener" class="sk-btn sk-btn--yellow-pill">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+				Itinéraire
+			</a>
+			<div class="sk-map-placeholder">
+				<svg viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.6"><path d="M9 20l-6-3V4l6 3 6-3 6 3v13l-6-3-6 3z"/><path d="M9 7v13M15 4v13"/></svg>
+				<span>Map Placeholder</span>
+			</div>
+		</div>
 	</section>
 
 	<!-- ================= INSTAGRAM ================= -->
-	<section class="main-section insta-strip" id="instagram">
-		<div class="main-section__head" style="padding-bottom:0;">
-			<h2 class="main-section__title">Instagram</h2>
-			<p style="margin-top:18px;">101 publications · 3 709 abonnés · 14 abonnements</p>
-			<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" class="link-arrow">@shukerycoffee</a>
-		</div>
-	</section>
-
-	<!-- ================= NOUS REJOINDRE ================= -->
-	<section class="main-section" id="rejoindre" style="padding-top:0;">
-		<div class="main-section__head">
-			<h2 class="main-section__title">Nous rejoindre</h2>
-			<p class="main-section__desc">Shukery Coffee recrute ponctuellement en salle et en cuisine. Envoyez-nous une candidature spontanée.</p>
-		</div>
-		<div style="text-align:center;">
-			<a href="mailto:contact@shukerycoffee.fr?subject=Candidature%20spontanée" class="btn">Nous écrire</a>
+	<section class="sk-insta">
+		<div class="sk-insta-inner">
+			<p class="sk-insta-handle">
+				<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.8.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.63.42 1.36.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.07-.22 1.8-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.07-.05-1.8-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.07.22-1.8.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.08.28 6.81.11 7.88.06 8.95.01 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z" transform="translate(0 2)"/></svg>
+				@shukerycoffee
+			</p>
+			<div class="sk-insta-stats">
+				<div><b>3 709</b><span>followers</span></div>
+				<div><b>101</b><span>publications</span></div>
+			</div>
+			<div class="sk-insta-grid">
+				<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener"><img src="assets/figma/bg1.png" alt="Post Instagram Shukery Coffee"></a>
+				<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener"><img src="assets/figma/bg2.png" alt="Post Instagram Shukery Coffee"></a>
+				<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener"><img src="assets/figma/bg3.png" alt="Post Instagram Shukery Coffee"></a>
+				<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener"><img src="assets/figma/bg4.png" alt="Post Instagram Shukery Coffee"></a>
+				<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener"><img src="assets/figma/bg5.png" alt="Post Instagram Shukery Coffee"></a>
+			</div>
+			<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" class="sk-btn sk-btn--yellow">Suivre sur Instagram</a>
 		</div>
 	</section>
 
 	<!-- ================= FOOTER ================= -->
-	<footer class="mission-footer">
-		<div class="container">
-			<img class="mission-footer__icon" src="assets/footer-coffee.gif" alt="">
-			<p class="statement">Un café de spécialité et des pâtisseries maison, préparés avec soin — pour que chaque visite chez Shukery devienne une petite pause précieuse dans votre journée.</p>
-			<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" class="btn btn--outline-cream">@shukerycoffee sur Instagram</a>
-			<p class="footer-info">18 avenue de l'Opéra, 75001 Paris<span>|</span><a href="mailto:contact@shukerycoffee.fr">contact@shukerycoffee.fr</a></p>
-			<p class="footer-copy">© 2026 SHUKERY COFFEE. TOUS DROITS RÉSERVÉS.</p>
+	<footer class="sk-footer" id="rejoindre">
+		<img class="sk-footer-illus" src="assets/figma/footer-illustration.png" alt="">
+		<div class="sk-footer-cols">
+			<div class="sk-footer-col">
+				<h4>Adresse</h4>
+				<p>18 avenue de l'Opéra<br>75001 Paris, France</p>
+			</div>
+			<div class="sk-footer-col">
+				<h4>Horaires</h4>
+				<p>Lun - Ven: 7h30 - 21h00<br>Sam - Dim: 10h00 - 21h00</p>
+			</div>
+			<div class="sk-footer-col">
+				<h4>Social</h4>
+				<div class="sk-footer-social">
+					<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" aria-label="Instagram">
+						<img src="assets/figma/icon-instagram.svg" alt="">
+					</a>
+					<a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+						<img src="assets/figma/icon-facebook.svg" alt="">
+					</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 
