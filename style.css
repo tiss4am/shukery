@@ -481,13 +481,13 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 
 /* HERO */
 .sk-hero{ position:relative; background:#FFD936; overflow:hidden; padding-bottom:110px; }
-.sk-hero-slider{ position:relative; min-height:620px; }
-.sk-hero-slide{ position:absolute; inset:0; opacity:0; visibility:hidden; transition:opacity 1s ease; display:flex; align-items:center; }
-.sk-hero-slide.is-active{ position:relative; opacity:1; visibility:visible; z-index:1; }
-.sk-hero-bg{ position:absolute; inset:0; opacity:.2; object-fit:cover; object-position:bottom; pointer-events:none; }
+.sk-hero-slider{ position:relative; min-height:620px; background:#FFD936; }
+.sk-hero-bg{ position:absolute; inset:0; z-index:0; opacity:.2; object-fit:cover; object-position:bottom; pointer-events:none; }
+.sk-hero-slide{ position:absolute; inset:0; z-index:1; opacity:0; visibility:hidden; transition:opacity 1.2s ease-in-out; display:flex; align-items:center; background:transparent; }
+.sk-hero-slide.is-active{ position:relative; opacity:1; visibility:visible; z-index:2; }
 .sk-hero-inner{ position:relative; z-index:1; max-width:1280px; margin:0 auto; padding:60px 32px 0; display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px; width:100%; }
-.sk-promo-inner--slide{ width:100%; height:100%; border-radius:0; min-height:620px; }
 .sk-hero-title{ font-size:clamp(32px,4.2vw,48px); line-height:1.05; color:#fff; text-shadow:0 1px 5px rgba(0,0,0,.12); margin-bottom:24px; text-transform:uppercase; }
+.sk-hero-title--dark{ color:#111827; text-shadow:none; }
 .sk-hero-sub{ font-family:'Inter', var(--font); font-weight:700; font-size:18px; line-height:1.6; color:#fff; text-shadow:0 1px 5px rgba(0,0,0,.12); max-width:420px; margin-bottom:28px; }
 .sk-hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
 .sk-hero-visual img{ width:100%; height:auto; filter:drop-shadow(0 20px 30px rgba(0,0,0,.15)); }
@@ -527,6 +527,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-promo-text img{ height:44px; margin-bottom:24px; }
 .sk-promo-text h3{ font-size:clamp(26px,3.4vw,36px); text-transform:uppercase; color:#111; line-height:1.1; margin-bottom:28px; }
 .sk-promo-visual{ position:relative; display:flex; align-items:flex-end; justify-content:center; gap:36px; padding:40px 20px 0; height:100%; }
+.sk-promo-visual--hero{ height:auto; padding:0; gap:50px; }
 .sk-promo-product{ position:relative; text-align:center; }
 .sk-promo-product img.sk-cup{ width:150px; height:auto; position:relative; z-index:2; }
 .sk-promo-product .sk-shadow{ position:absolute; bottom:6px; left:50%; transform:translateX(-50%); width:170%; opacity:.5; z-index:1; }
