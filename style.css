@@ -453,8 +453,12 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
    SHUKERY — page d'accueil (implémentation Figma)
    Classes préfixées .sk- pour ne pas affecter le reste du site.
    ========================================================= */
+@font-face{ font-family:'Anitype Journal'; src:url('assets/fonts/AnitypeJournal.otf') format('opentype'); font-weight:400; font-display:swap; }
+@font-face{ font-family:'Pally Variable'; src:url('assets/fonts/PallyVariable.ttf') format('truetype'); font-weight:100 900; font-display:swap; }
+
 .sk-page{ font-family:'Inter', var(--font); background:#F9F4EF; color:#111827; padding-top:0; }
-.sk-page h1, .sk-page h2, .sk-page h3, .sk-page h4{ font-family:'Fredoka', var(--font); margin:0; }
+.sk-page h1, .sk-page h2, .sk-page h3, .sk-page h4{ font-family:'Pally Variable', 'Fredoka', var(--font); font-weight:700; margin:0; }
+.sk-hero-title, .sk-promo-text h3, .sk-promo-label{ font-family:'Anitype Journal', 'Fredoka', var(--font); font-weight:400; }
 .sk-container{ max-width:1280px; margin:0 auto; padding:0 32px; }
 .sk-btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; font-family:'Inter', var(--font); font-weight:700; font-size:16px; border-radius:55px; padding:16px 32px; border:none; cursor:pointer; transition:transform .15s ease, box-shadow .15s ease; white-space:nowrap; }
 .sk-btn:hover{ transform:translateY(-2px); }
@@ -493,7 +497,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-histoire-grid{ display:flex; gap:32px; flex-wrap:wrap; justify-content:center; }
 .sk-histoire-item{ display:flex; gap:20px; max-width:340px; flex:1 1 280px; }
 .sk-histoire-item img{ width:64px; height:64px; object-fit:contain; flex-shrink:0; }
-.sk-histoire-item h4{ font-size:17px; color:#111; margin-bottom:8px; font-family:'Inter', var(--font); font-weight:700; }
+.sk-histoire-item h4{ font-size:17px; color:#111; margin-bottom:8px; }
 .sk-histoire-item p{ font-size:14px; color:#7d7d7d; line-height:1.6; margin:0; }
 
 /* PROMO NOUVEAUTÉS */
@@ -513,7 +517,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-promo-product .sk-sprinkle{ position:absolute; bottom:-10px; width:80px; z-index:1; opacity:.9; }
 .sk-promo-product .sk-sprinkle--left{ left:-30px; }
 .sk-promo-product .sk-sprinkle--right{ right:-30px; }
-.sk-promo-label{ font-size:20px; text-transform:uppercase; color:#111; margin-bottom:10px; font-family:'Fredoka', var(--font); }
+.sk-promo-label{ font-size:20px; text-transform:uppercase; color:#111; margin-bottom:10px; }
 
 /* HORAIRES / NOUS TROUVER */
 .sk-info{ padding:0 32px 90px; max-width:1280px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:80px; }
@@ -548,7 +552,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-footer{ position:relative; background:#FFD936; border-radius:53px 53px 0 0; padding:64px 32px 40px; overflow:hidden; box-shadow:0 -1px 9px rgba(0,0,0,.17); }
 .sk-footer-illus{ position:absolute; left:0; bottom:0; width:min(34%,460px); pointer-events:none; }
 .sk-footer-cols{ position:relative; z-index:1; max-width:1280px; margin:0 auto; display:flex; justify-content:flex-start; padding-left:35%; gap:45px; flex-wrap:wrap; }
-.sk-footer-col h4{ font-family:'Inter', var(--font); font-size:16px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:#fff; margin-bottom:24px; }
+.sk-footer-col h4{ font-size:16px; letter-spacing:.09em; text-transform:uppercase; color:#fff; margin-bottom:24px; }
 .sk-footer-col p{ font-size:14px; color:#fff; line-height:1.6; margin:0; font-family:'Inter', var(--font); font-weight:500; }
 .sk-footer-social{ display:flex; gap:14px; align-items:center; }
 .sk-footer-social img{ height:28px; width:auto; }
