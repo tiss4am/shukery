@@ -45,16 +45,50 @@
 		</nav>
 	</header>
 
-	<!-- ================= HERO ================= -->
+	<!-- ================= HERO / CARROUSEL ================= -->
 	<section class="sk-hero" id="accueil">
-		<img class="sk-hero-bg" src="assets/figma/hero-bg-photo.png" alt="">
-		<div class="sk-hero-inner">
-			<div class="sk-hero-copy">
-				<h1 class="sk-hero-title">Coffee, matcha &amp; homemade pastry</h1>
-				<p class="sk-hero-sub">Great coffee, good vibes and a little reward for your daily ritual.</p>
+		<div class="sk-hero-slider" id="heroSlider">
+			<div class="sk-hero-slide is-active">
+				<img class="sk-hero-bg" src="assets/figma/hero-bg-photo.png" alt="">
+				<div class="sk-hero-inner">
+					<div class="sk-hero-copy">
+						<h1 class="sk-hero-title">Coffee, matcha &amp; homemade pastry</h1>
+						<p class="sk-hero-sub">Great coffee, good vibes and a little reward for your daily ritual.</p>
+					</div>
+					<div class="sk-hero-visual">
+						<img src="assets/figma/hero-storefront.png" alt="Façade illustrée du café Shukery, 18, avenue de l'Opéra">
+					</div>
+				</div>
 			</div>
-			<div class="sk-hero-visual">
-				<img src="assets/figma/hero-storefront.png" alt="Façade illustrée du café Shukery, 18, avenue de l'Opéra">
+			<div class="sk-hero-slide">
+				<div class="sk-promo-inner sk-promo-inner--slide" style="background-image:url('assets/figma/paper-texture.png');">
+					<div class="sk-promo-text">
+						<img src="assets/figma/logo-small.png" alt="Shukery Coffee">
+						<h3>Nouveautés chez Shukery</h3>
+						<a href="#carte" class="sk-btn sk-btn--yellow-lg">
+							Découvrir le menu
+							<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg>
+						</a>
+					</div>
+					<div class="sk-promo-visual">
+						<div class="sk-promo-product">
+							<span class="sk-promo-label">Lattee Tiramisu</span>
+							<img class="sk-shadow" src="assets/figma/ellipse2.svg" alt="">
+							<img class="sk-cup" src="assets/figma/latte-tiramisu.png" alt="Latte Tiramisu glacé">
+							<img class="sk-sprinkle sk-sprinkle--left" src="assets/figma/coffee-sprinkle.png" alt="">
+						</div>
+						<div class="sk-promo-product">
+							<span class="sk-promo-label">Matcha Tiramisu</span>
+							<img class="sk-shadow" src="assets/figma/ellipse1.svg" alt="">
+							<img class="sk-cup" src="assets/figma/matcha-tiramisu.png" alt="Matcha Tiramisu glacé">
+							<img class="sk-sprinkle sk-sprinkle--right" src="assets/figma/matcha-sprinkle.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hero-slider-controls">
+				<div class="hero-slider-pager" id="heroPager"></div>
 			</div>
 		</div>
 		<div class="sk-hero-curve" aria-hidden="true">

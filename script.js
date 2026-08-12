@@ -146,6 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   initSlider({ rootId: 'heroSlider', slideSelector: '.hero-slide', pagerId: 'heroPager', prevId: 'heroPrev', nextId: 'heroNext', autoplay: 6000 });
+  initSlider({ rootId: 'heroSlider', slideSelector: '.sk-hero-slide', pagerId: 'heroPager', autoplay: 5000 });
   initSlider({ rootId: 'browseSlider', slideSelector: '.browse-slide', pagerId: 'browsePager', prevId: 'browsePrev', nextId: 'browseNext', autoplay: 5000 });
 
   // ---- Onglets "Univers Shukery" ----
