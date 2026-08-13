@@ -633,8 +633,10 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 }
 @media (max-width:640px){
   .sk-mp-title{ padding:32px 20px 40px; }
-  .sk-mp-section{ padding:0 20px 60px; }
-  .sk-mp-banner{ padding:16px 20px; margin-bottom:36px; }
-  .sk-mp-grid{ grid-template-columns:1fr 1fr; gap:28px 16px; }
-  .sk-mp-item img{ max-width:130px; }
+  .sk-mp-section{ padding:0 14px 48px; }
+  .sk-mp-banner{ padding:14px 16px; margin-bottom:28px; font-size:16px; }
+  .sk-mp-grid{ grid-template-columns:repeat(4,1fr); gap:16px 8px; }
+  .sk-mp-item img{ max-width:100%; margin-bottom:10px; }
+  .sk-mp-item h4{ font-size:10.5px; line-height:1.2; margin-bottom:4px; }
+  .sk-mp-price{ font-size:11.5px; }
 }
