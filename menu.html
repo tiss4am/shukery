@@ -1,150 +1,163 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>메뉴안내 — 바라보다 BARABODA</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%23F1EFEB'/%3E%3Ctext x='50%25' y='58%25' font-size='24' text-anchor='middle'%3E☕%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu — Shukery Coffee, Paris</title>
+	<meta name="description" content="La carte matcha de Shukery Coffee — matcha latte, boissons fruitées et laits parfumés, 18 avenue de l'Opéra, Paris.">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23FFD936'/%3E%3Cpath d='M12 15h24l-2.6 20A5 5 0 0 1 28.5 39h-9a5 5 0 0 1-4.9-4L12 15Z' fill='%23fff'/%3E%3C/svg%3E">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<a href="https://mrkong.co.kr/main/index" target="_blank" rel="noopener" class="shop-banner">
-	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-	미스터콩 쇼핑몰
-</a>
+<body class="sk-page">
 
-<header class="site-header">
-	<nav class="navbar" id="navbar">
-		<a href="index.html" class="brand">
-			<img src="assets/logo.svg" alt="바라보다 BARABODA">
-		</a>
-		<button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
-			<span></span><span></span><span></span>
-		</button>
-		<ul class="nav-links" id="navLinks">
-			<li><a href="index.html">홈</a></li>
-			<li><a href="index.html#intro">프롤로그</a></li>
-			<li><a href="menu.html">메뉴안내</a></li>
-			<li><a href="index.html#universe">소통공간</a></li>
-			<li><a href="galerie.html">둘러보기</a></li>
-			<li><a href="contact.html">위치안내</a></li>
-		</ul>
-		<ul class="mega-menu">
-			<li>
-				<a href="index.html#intro">바라보다 소개</a>
-				<ul class="mega-dropdown">
-					<li><a href="index.html#intro">프롤로그</a></li>
-					<li><a href="index.html#intro">브랜드 이야기</a></li>
-					<li><a href="index.html#browse">둘러보기</a></li>
-					<li><a href="contact.html">위치안내</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="menu.html">메뉴안내</a>
-				<ul class="mega-dropdown">
-					<li><a href="menu.html">메뉴보기</a></li>
-					<li><a href="index.html#coffee-day">오늘의 커피</a></li>
-				</ul>
-			</li>
-			<li><a href="index.html#universe">소통공간</a></li>
-			<li><a href="contact.html">바램봄</a></li>
-		</ul>
-	</nav>
-</header>
+	<header class="sk-header">
+		<nav class="sk-nav" id="navbar">
+			<ul class="sk-nav-links">
+				<li><a href="index.html#accueil">Accueil</a></li>
+				<li><a href="menu.html" class="is-active">Menu</a></li>
+				<li><a href="index.html#histoire">Our Story</a></li>
+			</ul>
 
-<section class="page-banner">
-	<p class="breadcrumb"><a href="index.html">홈</a><span>/</span><span>메뉴안내</span></p>
-	<h1>메뉴안내</h1>
-</section>
+			<a href="index.html#accueil" class="sk-brand">
+				<img src="assets/figma/logo-nav-white.png" alt="Shukery Coffee">
+			</a>
 
-<section class="menu-page">
-	<div class="container">
-		<div class="menu-page__intro center">
-			<p class="lead center">미스터콩이 엄선한 원두로 내린 커피와 시즌 음료를 소개합니다. 매장 사정에 따라 구성이 변경될 수 있습니다.</p>
-		</div>
+			<ul class="sk-nav-links">
+				<li><a href="index.html#rejoindre">Nous rejoindre</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
 
-		<div class="menu-categories">
-			<div class="menu-cat">
-				<p class="menu-cat__tag">Signature</p>
-				<h3>핸드드립 커피</h3>
-				<ul>
-					<li><span>오늘의 커피</span><span>6,000원</span></li>
-					<li><span>에티오피아 예가체프</span><span>6,500원</span></li>
-					<li><span>콜롬비아 수프리모</span><span>6,500원</span></li>
-					<li><span>케냐 AA</span><span>7,000원</span></li>
-				</ul>
+			<button class="sk-nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+				<span></span><span></span><span></span>
+			</button>
+			<ul class="nav-links" id="navLinks">
+				<li><a href="index.html#accueil">Accueil</a></li>
+				<li><a href="menu.html" class="is-active">Menu</a></li>
+				<li><a href="index.html#histoire">Our Story</a></li>
+				<li><a href="index.html#rejoindre">Nous rejoindre</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- ================= BANDEAU + TITRE ================= -->
+	<section class="sk-mp-topband">
+		<img class="sk-hero-bg" src="assets/figma/hero-bg-photo.png" alt="">
+	</section>
+	<h1 class="sk-mp-title">menu</h1>
+
+	<!-- ================= MATCHA LATTE SERIES ================= -->
+	<section class="sk-mp-section">
+		<div class="sk-mp-banner sk-mp-banner--green">Matcha Latte Series</div>
+		<div class="sk-mp-grid">
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-matcha-latte.png" alt="Matcha Latte">
+				<h4 class="sk-mp-item-name--green">Matcha Latte</h4>
+				<span class="sk-mp-price">6 €</span>
 			</div>
-
-			<div class="menu-cat">
-				<p class="menu-cat__tag">Espresso</p>
-				<h3>에스프레소 커피</h3>
-				<ul>
-					<li><span>아메리카노</span><span>4,500원</span></li>
-					<li><span>카페라떼</span><span>5,000원</span></li>
-					<li><span>카푸치노</span><span>5,000원</span></li>
-					<li><span>바닐라라떼</span><span>5,500원</span></li>
-				</ul>
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-creme-matcha-latte.png" alt="Crème de Matcha Latte">
+				<h4>Crème de Matcha Latte</h4>
+				<span class="sk-mp-price">6 €</span>
 			</div>
-
-			<div class="menu-cat">
-				<p class="menu-cat__tag">Cold Brew</p>
-				<h3>더치 &amp; 콜드브루</h3>
-				<ul>
-					<li><span>더치커피</span><span>6,000원</span></li>
-					<li><span>콜드브루</span><span>5,500원</span></li>
-					<li><span>콜드브루 라떼</span><span>6,000원</span></li>
-				</ul>
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-matcha-latte-earlgrey.png" alt="Matcha Latte Earl Grey">
+				<h4>Matcha Latte<br><span class="sk-mp-item-name--green">Earl Grey*</span></h4>
+				<span class="sk-mp-price">6,8 €</span>
 			</div>
-
-			<div class="menu-cat">
-				<p class="menu-cat__tag">Ade &amp; Tea</p>
-				<h3>에이드 &amp; 티</h3>
-				<ul>
-					<li><span>자몽에이드</span><span>5,500원</span></li>
-					<li><span>레몬에이드</span><span>5,500원</span></li>
-					<li><span>얼그레이 티</span><span>5,000원</span></li>
-				</ul>
-			</div>
-
-			<div class="menu-cat">
-				<p class="menu-cat__tag">Dessert</p>
-				<h3>디저트</h3>
-				<ul>
-					<li><span>수제 쿠키</span><span>3,500원</span></li>
-					<li><span>오늘의 케이크</span><span>6,500원</span></li>
-					<li><span>크로플</span><span>6,000원</span></li>
-				</ul>
-			</div>
-
-			<div class="menu-cat">
-				<p class="menu-cat__tag">참고</p>
-				<h3>원두 구매</h3>
-				<ul>
-					<li><span>오늘의 원두는 미스터콩에서도 구매 가능</span><span>→</span></li>
-				</ul>
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-matcha-latte-thaitea.png" alt="Matcha Latte Thaï Tea">
+				<h4>Matcha Latte<br><span class="sk-mp-item-name--green">Thaï Tea*</span></h4>
+				<span class="sk-mp-price">6,8 €</span>
 			</div>
 		</div>
+	</section>
 
-		<div class="menu-note">
-			<p>전체 메뉴와 가격은 매장 및 전화 문의를 통해 확인하실 수 있습니다.
-				<a href="tel:031-576-0007" class="link-arrow" style="margin:0;">031-576-0007</a></p>
-			<a href="contact.html" class="btn btn--small">위치보기</a>
+	<!-- ================= FRUITY MATCHA SERIES ================= -->
+	<section class="sk-mp-section">
+		<div class="sk-mp-banner sk-mp-banner--purple">Fruity Matcha Series</div>
+		<div class="sk-mp-grid">
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-matcha-latte-fraise.png" alt="Matcha Latte Fraise">
+				<h4 class="sk-mp-item-name--purple">Matcha Latte Fraise</h4>
+				<span class="sk-mp-price">6,8 €</span>
+			</div>
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-matcha-latte-mangue.png" alt="Matcha Latte Mangue">
+				<h4>Matcha Latte Mangue</h4>
+				<span class="sk-mp-price">6,8 €</span>
+			</div>
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-matcha-ade-fraise.png" alt="Matcha-Ade Fraise">
+				<h4>Matcha-Ade<br><span class="sk-mp-item-name--purple">Fraise*</span></h4>
+				<span class="sk-mp-price">6,8 €</span>
+			</div>
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-matcha-ade-mangue.png" alt="Matcha-Ade Mangue">
+				<h4>Matcha-Ade<br><span class="sk-mp-item-name--purple">Mangue*</span></h4>
+				<span class="sk-mp-price">6,8 €</span>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<footer class="mission-footer">
-	<div class="container">
-		<img class="mission-footer__icon" src="assets/footer-coffee.gif" alt="">
-		<p class="statement">미스터콩이 엄선한 좋은 원두와, 정성스레 내린 한 잔의 커피가 — 저희가 준비한 아름다운 공간 안에서 소중한 경험이 되기를 바랍니다.</p>
-		<a href="https://mrkong.co.kr/main/index" target="_blank" rel="noopener" class="btn btn--outline-cream">미스터콩 쇼핑몰 바로가기</a>
-		<p class="footer-info">주소: 경기도 남양주시 조안면 다산로 566-3<span>|</span>TEL. <a href="tel:031-576-0007">031-576-0007</a></p>
-		<p class="footer-copy">COPYRIGHT © BARABODA. ALL RIGHTS RESERVED.</p>
-	</div>
-</footer>
+	<!-- ================= MILK AND -ADE SERIES ================= -->
+	<section class="sk-mp-section">
+		<div class="sk-mp-banner sk-mp-banner--pink">Milk and -Ade Series</div>
+		<div class="sk-mp-grid">
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-lait-fraise.png" alt="Lait Fraise">
+				<h4>Lait<br>Fraise</h4>
+				<span class="sk-mp-price">4,5 €</span>
+			</div>
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-lait-mangue.png" alt="Lait Mangue">
+				<h4>Lait<br>Mangue</h4>
+				<span class="sk-mp-price">4,5 €</span>
+			</div>
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-limonade-fraise.png" alt="Limon-Ade Fraise">
+				<h4>Limon-Ade<br>Fraise</h4>
+				<span class="sk-mp-price">5,5 €</span>
+			</div>
+			<div class="sk-mp-item">
+				<img src="assets/figma/menu/drink-limonade-mangue.png" alt="Limon-Ade Mangue">
+				<h4>Limon-Ade<br>Mangue</h4>
+				<span class="sk-mp-price">5,5 €</span>
+			</div>
+		</div>
+	</section>
 
-<script src="script.js"></script>
+	<!-- ================= FOOTER ================= -->
+	<footer class="sk-footer" id="rejoindre">
+		<img class="sk-footer-illus" src="assets/figma/footer-illustration.png" alt="">
+		<div class="sk-footer-cols">
+			<div class="sk-footer-col">
+				<h4>Adresse</h4>
+				<p>18 avenue de l'Opéra<br>75001 Paris, France</p>
+			</div>
+			<div class="sk-footer-col">
+				<h4>Horaires</h4>
+				<p>Lun - Ven: 7h30 - 21h00<br>Sam - Dim: 10h00 - 21h00</p>
+			</div>
+			<div class="sk-footer-col">
+				<h4>Social</h4>
+				<div class="sk-footer-social">
+					<a href="https://www.instagram.com/shukerycoffee/" target="_blank" rel="noopener" aria-label="Instagram">
+						<img src="assets/figma/icon-instagram.svg" alt="">
+					</a>
+					<a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+						<img src="assets/figma/icon-facebook.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
