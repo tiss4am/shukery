@@ -480,20 +480,17 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-nav-toggle span{ width:22px; height:2px; background:#fff; border-radius:2px; }
 
 /* HERO */
-.sk-hero{ position:relative; background:#FFD936; overflow:hidden; padding-bottom:110px; }
-.sk-hero-slider{ position:relative; min-height:620px; background:#FFD936; }
-.sk-hero-bg{ position:absolute; inset:0; z-index:0; width:100%; height:100%; opacity:.45; object-fit:cover; object-position:left top; pointer-events:none; }
+.sk-hero{ position:relative; background:#FFD936; overflow:hidden; }
+.sk-hero-slider{ position:relative; min-height:700px; background:#FFD936; }
+.sk-hero-bg{ position:absolute; inset:0; z-index:0; width:100%; height:100%; opacity:.2; object-fit:cover; object-position:center bottom; pointer-events:none; }
 .sk-hero-slide{ position:absolute; inset:0; z-index:1; opacity:0; visibility:hidden; transition:opacity 1.2s ease-in-out; display:flex; align-items:center; background:transparent; }
 .sk-hero-slide.is-active{ position:relative; opacity:1; visibility:visible; z-index:2; }
-.sk-hero-inner{ position:relative; z-index:1; max-width:1280px; margin:0 auto; padding:60px 32px 0; display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px; width:100%; }
+.sk-hero-inner{ position:relative; z-index:1; max-width:1280px; margin:0 auto; padding:60px 32px; display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px; width:100%; }
 .sk-hero-title{ font-size:clamp(32px,4.2vw,48px); line-height:1.05; color:#fff; text-shadow:0 1px 5px rgba(0,0,0,.12); margin-bottom:24px; text-transform:uppercase; }
 .sk-hero-title--dark{ color:#111827; text-shadow:none; }
 .sk-hero-sub{ font-family:'Inter', var(--font); font-weight:700; font-size:18px; line-height:1.6; color:#fff; text-shadow:0 1px 5px rgba(0,0,0,.12); max-width:420px; margin-bottom:28px; }
 .sk-hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
 .sk-hero-visual img{ width:100%; height:auto; filter:drop-shadow(0 20px 30px rgba(0,0,0,.15)); }
-.sk-hero-curve{ position:absolute; left:0; right:0; bottom:-1px; line-height:0; }
-.sk-hero-curve svg{ width:100%; height:60px; display:block; }
-.sk-hero-curve path{ fill:#F9F4EF; }
 
 /* MENU */
 .sk-menu{ background:#F9F4EF; padding:96px 0; }
@@ -565,9 +562,10 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-insta-grid img{ width:100%; height:100%; object-fit:cover; }
 
 /* FOOTER */
-.sk-footer{ position:relative; background:#FFD936; border-radius:53px 53px 0 0; padding:78px 32px 0; overflow:hidden; box-shadow:0 -1px 9px rgba(0,0,0,.17); min-height:522px; }
+.sk-footer{ position:relative; background:#FFD936; border-radius:53px 53px 0 0; padding:64px 32px 0; overflow:hidden; box-shadow:0 -1px 9px rgba(0,0,0,.17); min-height:522px; }
 .sk-footer-illus{ position:absolute; left:0; bottom:0; height:100%; width:auto; max-width:none; pointer-events:none; }
-.sk-footer-cols{ position:relative; z-index:1; max-width:1280px; margin:0 auto; display:flex; justify-content:flex-start; padding-left:35%; gap:110px; flex-wrap:wrap; }
+.sk-footer-cols{ position:relative; z-index:1; display:flex; justify-content:flex-start; padding-left:32.5%; gap:45px; flex-wrap:wrap; }
+.sk-footer-col{ width:265px; flex-shrink:0; }
 .sk-footer-col h4{ font-size:16px; letter-spacing:.09em; text-transform:uppercase; color:#fff; margin-bottom:24px; }
 .sk-footer-col p{ font-size:14px; color:#fff; line-height:1.6; margin:0; font-family:'Inter', var(--font); font-weight:500; }
 .sk-footer-social{ display:flex; gap:14px; align-items:center; }
@@ -586,6 +584,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
   .sk-menu-grid{ grid-template-columns:1fr; gap:40px; }
   .sk-info{ grid-template-columns:1fr; gap:50px; }
   .sk-footer-cols{ padding-left:0; padding-top:40px; }
+  .sk-footer-col{ width:auto; }
   .sk-footer{ min-height:0; padding-top:0; }
   .sk-footer-illus{ position:static; display:block; height:auto; width:80%; margin:40px auto 0; }
 }
@@ -603,4 +602,5 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
   .sk-footer{ border-radius:32px 32px 0 0; padding:40px 20px 30px; min-height:0; }
   .sk-footer-illus{ display:none; }
   .sk-footer-cols{ padding-top:0; padding-left:0; flex-direction:column; gap:28px; }
+  .sk-footer-col{ width:100%; }
 }
