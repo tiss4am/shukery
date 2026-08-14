@@ -175,6 +175,42 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // ---- Hero slider Shukery (slides + fleches + points + autoplay) ----
+  (function () {
+    var root = document.getElementById('skHeroSlider');
+    if (!root) return;
+    var slides = Array.prototype.slice.call(root.querySelectorAll('.sk-hero-slide'));
+    if (slides.length < 2) return;
+    var dotsEl = document.getElementById('skHeroDots');
+    var prevBtn = document.getElementById('skHeroPrev');
+    var nextBtn = document.getElementById('skHeroNext');
+    var cur = 0, timer;
+
+    if (dotsEl) {
+      slides.forEach(function (_, i) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Aller à la diapositive ' + (i + 1));
+        if (i === 0) b.classList.add('is-active');
+        b.addEventListener('click', function () { go(i); restart(); });
+        dotsEl.appendChild(b);
+      });
+    }
+
+    function go(i) {
+      slides[cur].classList.remove('is-active');
+      if (dotsEl) dotsEl.children[cur].classList.remove('is-active');
+      cur = (i + slides.length) % slides.length;
+      slides[cur].classList.add('is-active');
+      if (dotsEl) dotsEl.children[cur].classList.add('is-active');
+    }
+    function restart() { clearInterval(timer); timer = setInterval(function () { go(cur + 1); }, 6000); }
+
+    if (prevBtn) prevBtn.addEventListener('click', function () { go(cur - 1); restart(); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { go(cur + 1); restart(); });
+    restart();
+  })();
+
   // ---- Carte : nav catégories active au scroll (scrollspy) ----
   var catNav = document.querySelector('.sk-cm-cat');
   if (catNav) {

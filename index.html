@@ -47,10 +47,11 @@
 
 	<!-- ================= HERO ================= -->
 	<section class="sk-hero" id="accueil">
-		<div class="sk-hero-slider">
-			<img class="sk-hero-bg" src="assets/figma/hero-bg-photo.png" alt="">
+		<div class="sk-hero-slider" id="skHeroSlider">
 
-			<div class="sk-hero-slide is-active">
+			<!-- SLIDE 1 — Nouveautés (jaune) -->
+			<div class="sk-hero-slide sk-hero-slide--yellow is-active">
+				<img class="sk-hero-bg" src="assets/figma/hero-bg-photo.png" alt="">
 				<div class="sk-hero-inner">
 					<div class="sk-hero-copy">
 						<h1 class="sk-hero-title">Nouveautés chez Shukery</h1>
@@ -68,6 +69,24 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- SLIDE 2 — Homemade Peach (rose, édition limitée) -->
+			<div class="sk-hero-slide sk-hero-slide--peach">
+				<img class="sk-hero-bg" src="assets/figma/hero-bg-photo.png" alt="">
+				<span class="sk-hero-badge">Limited<br>Edition</span>
+				<div class="sk-hero-inner">
+					<div class="sk-hero-copy">
+						<h1 class="sk-hero-title">Homemade<br><span class="sk-hero-title--pink">Peach</span></h1>
+					</div>
+					<div class="sk-promo-visual sk-promo-visual--hero">
+						<img class="sk-promo-hero-img sk-promo-hero-img--peach" src="assets/figma/hero-trio-peach.png" alt="Boissons édition limitée">
+					</div>
+				</div>
+			</div>
+
+			<button class="sk-hero-arrow sk-hero-arrow--prev" id="skHeroPrev" aria-label="Slide précédente">&#8249;</button>
+			<button class="sk-hero-arrow sk-hero-arrow--next" id="skHeroNext" aria-label="Slide suivante">&#8250;</button>
+			<div class="sk-hero-dots" id="skHeroDots"></div>
 		</div>
 	</section>
 
