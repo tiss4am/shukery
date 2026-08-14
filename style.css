@@ -482,6 +482,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 
 /* HERO */
 .sk-hero{ position:relative; background:#FFD936; overflow:hidden; }
+.sk-hero::after{ content:""; position:absolute; z-index:3; left:50%; transform:translateX(-50%); bottom:-120px; width:150%; height:210px; background:#F9F4EF; border-radius:50%; pointer-events:none; }
 .sk-hero-slider{ position:relative; min-height:560px; background:#FFD936; }
 .sk-hero-bg{ position:absolute; inset:0; z-index:0; width:100%; height:100%; opacity:.4; object-fit:cover; object-position:center bottom; pointer-events:none; }
 .sk-hero-slide{ position:absolute; inset:0; z-index:1; opacity:0; visibility:hidden; transition:opacity 1.2s ease-in-out; display:flex; align-items:center; background:transparent; }
