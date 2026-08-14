@@ -594,7 +594,8 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
   .sk-promo-label{ font-size:15px; margin-bottom:8px; }
   .sk-promo-product .sk-sprinkle{ width:48px; }
   .sk-promo-slice{ width:92px; margin:0 -16px -2px; }
-  .sk-info{ padding:0 20px 60px; }
+  .sk-info{ padding:56px 20px 60px; }
+  .sk-insta{ padding:64px 20px; }
   .sk-insta-grid{ gap:10px; }
   .sk-insta-grid a{ width:30%; }
   .sk-footer{ border-radius:32px 32px 0 0; padding:40px 20px 30px; min-height:0; }
