@@ -581,7 +581,10 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
   .sk-hero-inner{ padding:40px 20px 0; }
   .sk-container{ padding:0 20px; }
   .sk-menu-teaser{ padding:56px 20px; }
-  .sk-promo-visual{ flex-direction:column; gap:60px; padding-top:30px; }
+  .sk-promo-visual{ gap:14px; padding-top:20px; }
+  .sk-promo-product img.sk-cup{ width:130px; }
+  .sk-promo-label{ font-size:15px; margin-bottom:8px; }
+  .sk-promo-product .sk-sprinkle{ width:48px; }
   .sk-info{ padding:0 20px 60px; }
   .sk-insta-grid a{ width:42%; }
   .sk-footer{ border-radius:32px 32px 0 0; padding:40px 20px 30px; min-height:0; }
