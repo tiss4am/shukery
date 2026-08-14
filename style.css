@@ -481,7 +481,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 
 /* HERO */
 .sk-hero{ position:relative; background:#FFD936; overflow:hidden; }
-.sk-hero-slider{ position:relative; min-height:700px; background:#FFD936; }
+.sk-hero-slider{ position:relative; min-height:560px; background:#FFD936; }
 .sk-hero-bg{ position:absolute; inset:0; z-index:0; width:100%; height:100%; opacity:.4; object-fit:cover; object-position:center bottom; pointer-events:none; }
 .sk-hero-slide{ position:absolute; inset:0; z-index:1; opacity:0; visibility:hidden; transition:opacity 1.2s ease-in-out; display:flex; align-items:center; background:transparent; }
 .sk-hero-slide.is-active{ position:relative; opacity:1; visibility:visible; z-index:2; }
@@ -578,7 +578,8 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 @media (max-width:640px){
   .sk-nav{ padding:18px 20px; }
   .sk-brand img{ height:48px; }
-  .sk-hero-inner{ padding:40px 20px 0; }
+  .sk-hero-slider{ min-height:0; }
+  .sk-hero-inner{ padding:40px 20px; }
   .sk-container{ padding:0 20px; }
   .sk-menu-teaser{ padding:56px 20px; }
   .sk-promo-visual{ gap:14px; padding-top:20px; }
@@ -586,7 +587,8 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
   .sk-promo-label{ font-size:15px; margin-bottom:8px; }
   .sk-promo-product .sk-sprinkle{ width:48px; }
   .sk-info{ padding:0 20px 60px; }
-  .sk-insta-grid a{ width:42%; }
+  .sk-insta-grid{ gap:10px; }
+  .sk-insta-grid a{ width:30%; }
   .sk-footer{ border-radius:32px 32px 0 0; padding:40px 20px 30px; min-height:0; }
   .sk-footer-illus{ display:none; }
   .sk-footer-cols{ padding-top:0; padding-left:0; flex-direction:column; gap:28px; }
