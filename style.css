@@ -471,6 +471,9 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 
 /* HEADER — bannière desktop compacte + watermark abeille */
 .sk-header{ background:#FFD936; position:relative; z-index:20; overflow:hidden; }
+/* Accueil : header transparent en overlay -> prend la couleur de la slide active */
+.sk-header--overlay{ position:absolute; top:0; left:0; right:0; z-index:30; background:transparent; overflow:visible; }
+.sk-header--overlay::before{ display:none; }
 .sk-header::before{ content:""; position:absolute; left:22px; top:-34px; width:330px; height:180px; background:url('assets/figma/logo-nav-white.png') no-repeat left top; background-size:contain; opacity:.13; pointer-events:none; z-index:0; }
 .sk-nav{ position:relative; z-index:1; max-width:1280px; margin:0 auto; padding:15px 44px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
 .sk-nav-links{ display:flex; gap:32px; list-style:none; margin:0; padding:0; }
@@ -508,7 +511,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-hero-bg{ position:absolute; inset:0; z-index:0; width:100%; height:100%; opacity:.4; object-fit:cover; object-position:center bottom; pointer-events:none; }
 .sk-hero-slide{ position:absolute; inset:0; z-index:1; min-height:560px; opacity:0; visibility:hidden; transition:opacity 1.2s ease-in-out; display:flex; align-items:center; background:transparent; }
 .sk-hero-slide.is-active{ position:relative; opacity:1; visibility:visible; z-index:2; }
-.sk-hero-inner{ position:relative; z-index:2; max-width:1280px; margin:0 auto; padding:60px 32px; display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px; width:100%; }
+.sk-hero-inner{ position:relative; z-index:2; max-width:1280px; margin:0 auto; padding:104px 32px 60px; display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px; width:100%; }
 .sk-page .sk-hero-title{ font-family:'Anitype Journal','Fredoka',var(--font); font-weight:400; font-size:clamp(38px,5.2vw,62px); line-height:1.02; letter-spacing:.01em; color:#fff; text-shadow:0 2px 6px rgba(0,0,0,.14); margin-bottom:30px; text-transform:uppercase; }
 .sk-hero-copy .sk-btn--white{ font-family:'Anitype Journal','Fredoka',var(--font); font-weight:400; font-size:22px; letter-spacing:.02em; padding:15px 34px; }
 .sk-hero-copy .sk-btn--white svg{ width:16px; height:16px; }
@@ -631,7 +634,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
   .sk-nav{ padding:14px 20px; }
   .sk-brand img{ height:46px; }
   .sk-hero-slider{ min-height:0; }
-  .sk-hero-inner{ padding:40px 20px; }
+  .sk-hero-inner{ padding:84px 20px 40px; }
   .sk-container{ padding:0 20px; }
   .sk-menu-teaser{ padding:56px 20px; }
   .sk-promo-visual{ gap:14px; padding-top:20px; }
