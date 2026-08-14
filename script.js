@@ -174,4 +174,37 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  // ---- Carte : nav catégories active au scroll (scrollspy) ----
+  var catNav = document.querySelector('.sk-cm-cat');
+  if (catNav) {
+    var catLinks = Array.prototype.slice.call(catNav.querySelectorAll('a'));
+
+    function setActiveCat(id) {
+      var matched = false;
+      catLinks.forEach(function (a) {
+        var on = !matched && a.getAttribute('href') === id;
+        if (on) matched = true;
+        a.classList.toggle('is-active', on);
+      });
+    }
+
+    var sections = [];
+    catLinks.forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (href && href.charAt(0) === '#') {
+        var sec = document.querySelector(href);
+        if (sec && sections.indexOf(sec) === -1) sections.push(sec);
+      }
+    });
+
+    if (sections.length && 'IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) setActiveCat('#' + entry.target.id);
+        });
+      }, { rootMargin: '-25% 0px -65% 0px', threshold: 0 });
+      sections.forEach(function (s) { observer.observe(s); });
+    }
+  }
 });

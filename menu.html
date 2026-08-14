@@ -45,92 +45,168 @@
 		</nav>
 	</header>
 
-	<!-- ================= BANDEAU + TITRE ================= -->
-	<section class="sk-mp-topband">
-		<img class="sk-hero-bg sk-mp-bg" src="assets/figma/hero-bg-photo.png" alt="">
-	</section>
-	<h1 class="sk-mp-title">menu</h1>
+	<!-- ================= CARTE : SIDEBAR + SECTIONS ================= -->
+	<main class="sk-cm">
+		<div class="sk-cm-wrap">
 
-	<!-- ================= MATCHA LATTE SERIES ================= -->
-	<section class="sk-mp-section">
-		<div class="sk-mp-banner sk-mp-banner--green">Matcha Latte Series</div>
-		<div class="sk-mp-grid">
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-matcha-latte.png" alt="Matcha Latte">
-				<h4 class="sk-mp-item-name--green">Matcha Latte</h4>
-				<span class="sk-mp-price">6 €</span>
-			</div>
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-creme-matcha-latte.png" alt="Crème de Matcha Latte">
-				<h4>Crème de Matcha Latte</h4>
-				<span class="sk-mp-price">6 €</span>
-			</div>
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-matcha-latte-earlgrey.png" alt="Matcha Latte Earl Grey">
-				<h4>Matcha Latte<br><span class="sk-mp-item-name--green">Earl Grey*</span></h4>
-				<span class="sk-mp-price">6,8 €</span>
-			</div>
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-matcha-latte-thaitea.png" alt="Matcha Latte Thaï Tea">
-				<h4>Matcha Latte<br><span class="sk-mp-item-name--green">Thaï Tea*</span></h4>
-				<span class="sk-mp-price">6,8 €</span>
+			<!-- Sidebar catégories -->
+			<aside class="sk-cm-side">
+				<ul class="sk-cm-cat">
+					<li><a href="#nouveautes" class="is-active"><span class="ico">☕</span>Café</a></li>
+					<li><a href="#matcha"><span class="ico">🍵</span>Matcha</a></li>
+					<li><a href="#fruity"><span class="ico">🍋</span>Fruité</a></li>
+					<li><a href="#milk"><span class="ico">🥨</span>Salé</a></li>
+					<li><a href="#milk"><span class="ico"></span>Autres</a></li>
+					<li><a href="#desserts"><span class="ico">🍪</span>Desserts</a></li>
+				</ul>
+				<div class="sk-cm-formule">
+					<h4>Formule Midi</h4>
+					<p>Profitez de notre formule midi complète.</p>
+					<a href="index.html#contact" class="sk-cm-formule-btn">À partir de 15€</a>
+				</div>
+			</aside>
+
+			<!-- Contenu -->
+			<div class="sk-cm-main">
+
+				<!-- Nos Nouveautés -->
+				<section id="nouveautes" class="sk-cm-section">
+					<span class="sk-cm-band sk-cm-band--yellow">Nos Nouveautés</span>
+					<div class="sk-cm-grid">
+						<div class="sk-cm-item">
+							<img src="assets/figma/latte-tiramisu.png" alt="Latte Tiramisu">
+							<h4>Latte Tiramisu</h4>
+							<span class="sk-cm-price">6 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/matcha-tiramisu.png" alt="Matcha Tiramisu">
+							<h4>Matcha Tiramisu</h4>
+							<span class="sk-cm-price">6 €</span>
+						</div>
+					</div>
+				</section>
+
+				<!-- Matcha Latte Series -->
+				<section id="matcha" class="sk-cm-section">
+					<span class="sk-cm-band sk-cm-band--green">Matcha Latte Series</span>
+					<div class="sk-cm-grid">
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-matcha-latte.png" alt="Matcha Latte">
+							<h4><span class="accent-green">Matcha Latte</span></h4>
+							<span class="sk-cm-price">6 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-creme-matcha-latte.png" alt="Crème de Matcha Latte">
+							<h4>Crème de <span class="accent-green">Matcha Latte</span></h4>
+							<span class="sk-cm-price">6 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-matcha-latte-earlgrey.png" alt="Matcha Latte Earl Grey">
+							<h4>Matcha Latte<br><span class="accent-green">Earl Grey*</span></h4>
+							<span class="sk-cm-price">6,8 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-matcha-latte-thaitea.png" alt="Matcha Latte Thaï Tea">
+							<h4>Matcha Latte<br><span class="accent-green">Thaï Tea*</span></h4>
+							<span class="sk-cm-price">6,8 €</span>
+						</div>
+					</div>
+				</section>
+
+				<!-- Fruity Matcha Series -->
+				<section id="fruity" class="sk-cm-section">
+					<span class="sk-cm-band sk-cm-band--purple">Fruity Matcha Series</span>
+					<div class="sk-cm-grid">
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-matcha-latte-fraise.png" alt="Matcha Latte Fraise">
+							<h4>Matcha Latte<br><span class="accent-purple">Fraise</span></h4>
+							<span class="sk-cm-price">6,8 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-matcha-latte-mangue.png" alt="Matcha Latte Mangue">
+							<h4>Matcha Latte<br><span class="accent-purple">Mangue</span></h4>
+							<span class="sk-cm-price">6,8 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-matcha-ade-fraise.png" alt="Matcha-Ade Fraise">
+							<h4>Matcha-Ade<br><span class="accent-purple">Fraise*</span></h4>
+							<span class="sk-cm-price">6,8 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-matcha-ade-mangue.png" alt="Matcha-Ade Mangue">
+							<h4>Matcha-Ade<br><span class="accent-purple">Mangue*</span></h4>
+							<span class="sk-cm-price">6,8 €</span>
+						</div>
+					</div>
+				</section>
+
+				<!-- Milk and -Ade Series -->
+				<section id="milk" class="sk-cm-section">
+					<span class="sk-cm-band sk-cm-band--pink">Milk and -Ade Series</span>
+					<div class="sk-cm-grid">
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-lait-fraise.png" alt="Lait Fraise">
+							<h4>Lait <span class="accent-pink">Fraise</span></h4>
+							<span class="sk-cm-price">4,5 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-lait-mangue.png" alt="Lait Mangue">
+							<h4>Lait <span class="accent-pink">Mangue</span></h4>
+							<span class="sk-cm-price">4,5 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-limonade-fraise.png" alt="Limon-Ade Fraise">
+							<h4>Limon-Ade<br><span class="accent-pink">Fraise</span></h4>
+							<span class="sk-cm-price">5,5 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<img src="assets/figma/menu/drink-limonade-mangue.png" alt="Limon-Ade Mangue">
+							<h4>Limon-Ade<br><span class="accent-pink">Mangue</span></h4>
+							<span class="sk-cm-price">5,5 €</span>
+						</div>
+					</div>
+				</section>
+
+				<!-- Desserts Gourmands (photos à venir : placeholders) -->
+				<section id="desserts" class="sk-cm-section">
+					<span class="sk-cm-band sk-cm-band--orange">Desserts Gourmands</span>
+					<div class="sk-cm-grid sk-cm-grid--5">
+						<div class="sk-cm-item">
+							<div class="sk-cm-ph" role="img" aria-label="Brownie chocolat">🍫</div>
+							<h4>Brownie <span class="accent-orange">Chocolat</span></h4>
+							<span class="sk-cm-price">6 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<div class="sk-cm-ph" role="img" aria-label="Carrot cake">🥕</div>
+							<h4>Carrot Cake</h4>
+							<span class="sk-cm-price">6 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<div class="sk-cm-ph" role="img" aria-label="Cake citron pavot">🍋</div>
+							<h4>Cake Citron <span class="accent-orange">Pavot</span></h4>
+							<span class="sk-cm-price">6,8 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<div class="sk-cm-ph" role="img" aria-label="Cookie sésame noir">🍪</div>
+							<h4>Cookie <span class="accent-orange">Sésame Noir</span></h4>
+							<span class="sk-cm-price">6,8 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<div class="sk-cm-ph" role="img" aria-label="Cookie 2 chocolats">🍪</div>
+							<h4>Cookie <span class="accent-orange">2 Chocolats</span></h4>
+							<span class="sk-cm-price">6,8 €</span>
+						</div>
+						<div class="sk-cm-item">
+							<div class="sk-cm-ph" role="img" aria-label="Cookie chocolat blanc et macadamia">🍪</div>
+							<h4>Cookie Chocolat Blanc<br><span class="accent-orange">&amp; Macadamia</span></h4>
+							<span class="sk-cm-price">6 €</span>
+						</div>
+					</div>
+				</section>
+
 			</div>
 		</div>
-	</section>
-
-	<!-- ================= FRUITY MATCHA SERIES ================= -->
-	<section class="sk-mp-section">
-		<div class="sk-mp-banner sk-mp-banner--purple">Fruity Matcha Series</div>
-		<div class="sk-mp-grid">
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-matcha-latte-fraise.png" alt="Matcha Latte Fraise">
-				<h4 class="sk-mp-item-name--purple">Matcha Latte Fraise</h4>
-				<span class="sk-mp-price">6,8 €</span>
-			</div>
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-matcha-latte-mangue.png" alt="Matcha Latte Mangue">
-				<h4>Matcha Latte Mangue</h4>
-				<span class="sk-mp-price">6,8 €</span>
-			</div>
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-matcha-ade-fraise.png" alt="Matcha-Ade Fraise">
-				<h4>Matcha-Ade<br><span class="sk-mp-item-name--purple">Fraise*</span></h4>
-				<span class="sk-mp-price">6,8 €</span>
-			</div>
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-matcha-ade-mangue.png" alt="Matcha-Ade Mangue">
-				<h4>Matcha-Ade<br><span class="sk-mp-item-name--purple">Mangue*</span></h4>
-				<span class="sk-mp-price">6,8 €</span>
-			</div>
-		</div>
-	</section>
-
-	<!-- ================= MILK AND -ADE SERIES ================= -->
-	<section class="sk-mp-section">
-		<div class="sk-mp-banner sk-mp-banner--pink">Milk and -Ade Series</div>
-		<div class="sk-mp-grid">
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-lait-fraise.png" alt="Lait Fraise">
-				<h4>Lait<br>Fraise</h4>
-				<span class="sk-mp-price">4,5 €</span>
-			</div>
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-lait-mangue.png" alt="Lait Mangue">
-				<h4>Lait<br>Mangue</h4>
-				<span class="sk-mp-price">4,5 €</span>
-			</div>
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-limonade-fraise.png" alt="Limon-Ade Fraise">
-				<h4>Limon-Ade<br>Fraise</h4>
-				<span class="sk-mp-price">5,5 €</span>
-			</div>
-			<div class="sk-mp-item">
-				<img src="assets/figma/menu/drink-limonade-mangue.png" alt="Limon-Ade Mangue">
-				<h4>Limon-Ade<br>Mangue</h4>
-				<span class="sk-mp-price">5,5 €</span>
-			</div>
-		</div>
-	</section>
+	</main>
 
 	<!-- ================= FOOTER ================= -->
 	<footer class="sk-footer" id="rejoindre">
