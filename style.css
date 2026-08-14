@@ -483,7 +483,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 /* HERO */
 .sk-hero{ position:relative; background:#FFD936; overflow:hidden; }
 .sk-hero-slide.sk-hero-slide--yellow{ background:#FFD936; }
-.sk-hero-slide.sk-hero-slide--yellow::after{ content:""; position:absolute; z-index:3; left:50%; transform:translateX(-50%); bottom:-120px; width:150%; height:210px; background:#F9F4EF; border-radius:50%; pointer-events:none; }
+.sk-hero-slide.sk-hero-slide--yellow::after{ content:""; position:absolute; z-index:1; left:50%; transform:translateX(-50%); bottom:-150px; width:158%; height:330px; background:#F9F4EF; border-radius:50%; pointer-events:none; }
 
 /* Slide 2 — Homemade Peach */
 .sk-hero-slide.sk-hero-slide--peach{ background:linear-gradient(155deg,#F4A9C6 0%,#F6BEB4 42%,#FBD79B 100%); }
@@ -508,7 +508,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-hero-bg{ position:absolute; inset:0; z-index:0; width:100%; height:100%; opacity:.4; object-fit:cover; object-position:center bottom; pointer-events:none; }
 .sk-hero-slide{ position:absolute; inset:0; z-index:1; min-height:560px; opacity:0; visibility:hidden; transition:opacity 1.2s ease-in-out; display:flex; align-items:center; background:transparent; }
 .sk-hero-slide.is-active{ position:relative; opacity:1; visibility:visible; z-index:2; }
-.sk-hero-inner{ position:relative; z-index:1; max-width:1280px; margin:0 auto; padding:60px 32px; display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px; width:100%; }
+.sk-hero-inner{ position:relative; z-index:2; max-width:1280px; margin:0 auto; padding:60px 32px; display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px; width:100%; }
 .sk-page .sk-hero-title{ font-family:'Anitype Journal','Fredoka',var(--font); font-weight:400; font-size:clamp(38px,5.2vw,62px); line-height:1.02; letter-spacing:.01em; color:#fff; text-shadow:0 2px 6px rgba(0,0,0,.14); margin-bottom:30px; text-transform:uppercase; }
 .sk-hero-copy .sk-btn--white{ font-family:'Anitype Journal','Fredoka',var(--font); font-weight:400; font-size:22px; letter-spacing:.02em; padding:15px 34px; }
 .sk-hero-copy .sk-btn--white svg{ width:16px; height:16px; }
@@ -627,6 +627,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 }
 @media (max-width:640px){
   .sk-header::before{ display:none; }
+  .sk-hero-arrow{ display:none; }
   .sk-nav{ padding:14px 20px; }
   .sk-brand img{ height:46px; }
   .sk-hero-slider{ min-height:0; }
