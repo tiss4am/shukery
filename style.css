@@ -570,6 +570,28 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 @media (max-width:980px){
   .sk-nav-links{ display:none; }
   .sk-nav-toggle{ display:flex; }
+
+  /* Menu mobile Shukery — overlay plein écran (remplace le drawer sombre legacy) */
+  .sk-brand{ position:relative; z-index:50; }
+  .sk-nav-toggle{ position:relative; z-index:50; }
+  .sk-nav-toggle span{ transition:transform .25s ease, opacity .2s ease; }
+  .sk-nav-toggle[aria-expanded="true"] span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+  .sk-nav-toggle[aria-expanded="true"] span:nth-child(2){ opacity:0; }
+  .sk-nav-toggle[aria-expanded="true"] span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+  .sk-nav .nav-links{
+    position:fixed; inset:0; z-index:40; margin:0; width:100%;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;
+    padding:90px 24px 40px; background:#FFD936;
+    transform:translateY(-100%); opacity:0; visibility:hidden;
+    transition:transform .35s ease, opacity .25s ease, visibility 0s linear .35s;
+  }
+  .sk-nav .nav-links.is-open{ transform:translateY(0); opacity:1; visibility:visible; transition:transform .35s ease, opacity .25s ease; }
+  .sk-nav .nav-links a{ display:block; padding:12px 20px; text-align:center; color:#fff;
+    font-family:'Anitype Journal','Fredoka',var(--font); font-weight:400; font-size:28px;
+    letter-spacing:.03em; text-transform:uppercase; }
+  .sk-nav .nav-links a:hover{ opacity:.8; }
+  .sk-nav .nav-links a.is-active{ border-bottom:3px solid #fff; padding-bottom:4px; }
+
   .sk-hero-inner{ grid-template-columns:1fr; text-align:center; }
   .sk-promo-visual{ padding-bottom:40px; }
   .sk-info{ grid-template-columns:1fr; gap:50px; }
