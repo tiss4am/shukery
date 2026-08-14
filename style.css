@@ -475,19 +475,18 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-nav-links{ display:flex; gap:32px; list-style:none; margin:0; padding:0; }
 .sk-nav-links a{ font-family:'Inter', var(--font); font-weight:600; font-size:14px; letter-spacing:.06em; text-transform:uppercase; color:#fff; }
 .sk-nav-links a:hover{ opacity:.75; }
-.sk-brand img{ height:46px; width:auto; }
+.sk-brand img{ height:68px; width:auto; }
 .sk-nav-toggle{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
 .sk-nav-toggle span{ width:22px; height:2px; background:#fff; border-radius:2px; }
 
 /* HERO */
 .sk-hero{ position:relative; background:#FFD936; overflow:hidden; }
 .sk-hero-slider{ position:relative; min-height:700px; background:#FFD936; }
-.sk-hero-bg{ position:absolute; inset:0; z-index:0; width:100%; height:100%; opacity:.2; object-fit:cover; object-position:center bottom; pointer-events:none; }
+.sk-hero-bg{ position:absolute; inset:0; z-index:0; width:100%; height:100%; opacity:.4; object-fit:cover; object-position:center bottom; pointer-events:none; }
 .sk-hero-slide{ position:absolute; inset:0; z-index:1; opacity:0; visibility:hidden; transition:opacity 1.2s ease-in-out; display:flex; align-items:center; background:transparent; }
 .sk-hero-slide.is-active{ position:relative; opacity:1; visibility:visible; z-index:2; }
 .sk-hero-inner{ position:relative; z-index:1; max-width:1280px; margin:0 auto; padding:60px 32px; display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px; width:100%; }
 .sk-hero-title{ font-size:clamp(32px,4.2vw,48px); line-height:1.05; color:#fff; text-shadow:0 1px 5px rgba(0,0,0,.12); margin-bottom:24px; text-transform:uppercase; }
-.sk-hero-title--dark{ color:#111827; text-shadow:none; }
 
 /* MENU (teaser photos + link to menu.html) */
 .sk-menu-teaser{ background:#F9F4EF; padding:96px 32px; text-align:center; }
@@ -514,14 +513,14 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 
 /* PROMO NOUVEAUTÉS (visuel tiramisu dans le hero) */
 .sk-promo-visual{ position:relative; display:flex; align-items:flex-end; justify-content:center; gap:36px; padding:40px 20px 0; height:100%; }
-.sk-promo-visual--hero{ height:auto; padding:0; gap:50px; }
+.sk-promo-visual--hero{ height:auto; padding:0; gap:16px; }
 .sk-promo-product{ position:relative; text-align:center; }
-.sk-promo-product img.sk-cup{ width:150px; height:auto; position:relative; z-index:2; }
+.sk-promo-product img.sk-cup{ width:230px; height:auto; position:relative; z-index:2; }
 .sk-promo-product .sk-shadow{ position:absolute; bottom:6px; left:50%; transform:translateX(-50%); width:170%; opacity:.5; z-index:1; }
 .sk-promo-product .sk-sprinkle{ position:absolute; bottom:-10px; width:80px; z-index:1; opacity:.9; }
 .sk-promo-product .sk-sprinkle--left{ left:-30px; }
 .sk-promo-product .sk-sprinkle--right{ right:-30px; }
-.sk-promo-label{ font-size:20px; text-transform:uppercase; color:#111; margin-bottom:10px; }
+.sk-promo-label{ display:block; font-size:26px; line-height:1.15; text-transform:uppercase; color:#fff; text-shadow:0 1px 5px rgba(0,0,0,.12); margin-bottom:14px; }
 
 /* HORAIRES / NOUS TROUVER */
 .sk-info{ padding:96px 32px; max-width:1280px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:80px; }
@@ -578,7 +577,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 }
 @media (max-width:640px){
   .sk-nav{ padding:18px 20px; }
-  .sk-brand img{ height:34px; }
+  .sk-brand img{ height:48px; }
   .sk-hero-inner{ padding:40px 20px 0; }
   .sk-container{ padding:0 20px; }
   .sk-menu-teaser{ padding:56px 20px; }
