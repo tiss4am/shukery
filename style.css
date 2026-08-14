@@ -521,6 +521,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-promo-product .sk-sprinkle{ position:absolute; bottom:-10px; width:80px; z-index:1; opacity:.9; }
 .sk-promo-product .sk-sprinkle--left{ left:-30px; }
 .sk-promo-product .sk-sprinkle--right{ right:-30px; }
+.sk-promo-slice{ align-self:flex-end; width:158px; height:auto; margin:0 -28px -4px; position:relative; z-index:3; filter:drop-shadow(0 12px 16px rgba(0,0,0,.18)); }
 .sk-promo-label{ display:block; font-size:26px; line-height:1.15; text-transform:uppercase; color:#fff; text-shadow:0 1px 5px rgba(0,0,0,.12); margin-bottom:14px; }
 
 /* HORAIRES / NOUS TROUVER */
@@ -588,6 +589,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
   .sk-promo-product img.sk-cup{ width:130px; }
   .sk-promo-label{ font-size:15px; margin-bottom:8px; }
   .sk-promo-product .sk-sprinkle{ width:48px; }
+  .sk-promo-slice{ width:92px; margin:0 -16px -2px; }
   .sk-info{ padding:0 20px 60px; }
   .sk-insta-grid{ gap:10px; }
   .sk-insta-grid a{ width:30%; }
