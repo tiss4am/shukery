@@ -503,7 +503,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-hero-slide.is-active{ position:relative; opacity:1; visibility:visible; z-index:2; }
 
 /* Canvas calé sur les coordonnées exactes des maquettes Figma (cadre desktop 1440x765) */
-.sk-hero-precise{ position:relative; z-index:2; width:100%; max-width:1280px; margin:104px auto 60px; aspect-ratio:1440/765; container-type:inline-size; }
+.sk-hero-precise{ position:relative; z-index:2; width:100%; max-width:960px; margin:48px auto 40px; aspect-ratio:1440/765; container-type:inline-size; }
 .sk-hp-abs{ position:absolute; margin:0; }
 .sk-hp-title, .sk-hp-cap, .sk-hp-price, .sk-hp-sub, .sk-hp-desc, .sk-hp-badge{ font-family:'Anitype Journal','Fredoka',var(--font); font-weight:400; line-height:1.03; text-shadow:0 1px 5px rgba(0,0,0,.12); }
 .sk-hp-title{ font-size:4.444cqw; text-transform:uppercase; margin:0; z-index:3; }
@@ -513,7 +513,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-hp-price{ font-size:1.667cqw; color:#111; }
 .sk-hp-sub{ font-size:2.222cqw; color:#111; }
 .sk-hp-desc{ font-size:1.667cqw; text-transform:uppercase; color:#111; text-shadow:none; line-height:1.25; }
-.sk-hp-drink img{ width:100%; height:100%; object-fit:cover; display:block; filter:drop-shadow(0 16px 20px rgba(0,0,0,.14)); }
+.sk-hp-drink img{ width:100%; height:100%; object-fit:contain; object-position:center bottom; display:block; filter:drop-shadow(0 16px 20px rgba(0,0,0,.14)); }
 
 /* Tiramisu (banniere 3) */
 .sk-hp-titlebox{ left:6.875cqw; top:17.847cqw; width:24.167cqw; display:flex; flex-direction:column; gap:1.875cqw; }
