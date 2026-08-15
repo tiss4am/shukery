@@ -605,9 +605,12 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 
   .sk-promo-visual{ padding-bottom:40px; }
   .sk-info{ grid-template-columns:1fr; gap:50px; }
-  .sk-menu-teaser-grid{ grid-template-columns:1fr; grid-template-rows:none; height:auto; }
-  .sk-menu-teaser-tile{ height:280px; }
-  .sk-menu-teaser-tile--big{ grid-row:auto; }
+  .sk-menu-teaser-grid{ height:400px; gap:12px; }
+  .sk-menu-teaser-label{ padding:20px 18px 16px; }
+  .sk-menu-teaser-label h3{ font-size:20px; }
+  .sk-menu-teaser-tile--big .sk-menu-teaser-label{ padding:26px; }
+  .sk-menu-teaser-tile--big .sk-menu-teaser-label h3{ font-size:24px; }
+  .sk-menu-teaser-label p{ font-size:11px; }
   .sk-footer-cols{ padding-left:0; padding-top:28px; }
   .sk-footer-col{ width:auto; }
   .sk-footer{ min-height:0; padding-top:0; }
