@@ -56,8 +56,8 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 
 /* HERO — bannières exportées telles quelles depuis Figma (2x, sans la nav qui reste en overlay au-dessus) */
 .sk-hero{ position:relative; background:#FFD936; overflow:hidden; }
-.sk-hero-slide.sk-hero-slide--yellow{ background:linear-gradient(180deg,#FFBBD1 0%,#FDD68D 100%); }
-.sk-hero-slide.sk-hero-slide--peach{ background:linear-gradient(180deg,#FFF4BB 0%,#FFDFA4 100%); }
+.sk-hero-slide.sk-hero-slide--yellow{ background:linear-gradient(180deg,#FFF4BB 0%,#FFDFA4 100%); }
+.sk-hero-slide.sk-hero-slide--peach{ background:linear-gradient(180deg,#FFBBD1 0%,#FDD68D 100%); }
 
 /* Slider — flèches + points */
 .sk-hero-arrow{ position:absolute; top:50%; transform:translateY(-50%); z-index:6; width:46px; height:46px; border-radius:50%;
