@@ -75,7 +75,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-hero-banner{ display:block; width:100%; height:auto; max-width:1440px; margin:0 auto; }
 
 /* MENU (teaser photos + link to menu.html) */
-.sk-menu-teaser{ background:#F9F4EF; padding:96px 32px; text-align:center; }
+.sk-menu-teaser{ background:#F9F4EF; padding:96px 32px 44px; text-align:center; }
 .sk-menu-teaser h2{ font-family:'Anitype Journal', 'Fredoka', var(--font); font-weight:400; font-size:clamp(32px,4.5vw,48px); color:#111; text-shadow:0 1px 5px rgba(0,0,0,.12); margin-bottom:40px; }
 .sk-menu-teaser-grid{ max-width:1050px; height:520px; margin:0 auto 40px; display:grid; grid-template-columns:1.42fr 1fr; grid-template-rows:1fr 1fr; gap:16px; }
 .sk-menu-teaser-tile{ position:relative; display:block; border-radius:21px; overflow:hidden; }
@@ -89,7 +89,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-menu-teaser-btn{ display:inline-flex; }
 
 /* NOTRE HISTOIRE */
-.sk-histoire{ background:#F9F4EF; padding:96px 0; }
+.sk-histoire{ background:#F9F4EF; padding:40px 0 96px; }
 .sk-histoire h2{ text-align:center; font-size:26px; color:#0a0a09; margin-bottom:44px; letter-spacing:.02em; }
 .sk-histoire-grid{ display:flex; gap:32px; flex-wrap:wrap; justify-content:center; }
 .sk-histoire-item{ display:flex; gap:20px; max-width:340px; flex:1 1 280px; }
@@ -128,7 +128,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 
 /* FOOTER */
 .sk-footer{ position:relative; background:#FFD936; border-radius:53px 53px 0 0; padding:64px 32px 0; overflow:hidden; box-shadow:0 -1px 9px rgba(0,0,0,.17); min-height:522px; }
-.sk-footer-illus{ position:absolute; left:0; bottom:0; height:100%; width:auto; max-width:none; pointer-events:none; }
+.sk-footer-illus{ position:absolute; left:1.5%; bottom:6%; width:min(54%,760px); height:auto; max-width:none; pointer-events:none; }
 .sk-footer-cols{ position:relative; z-index:1; display:flex; justify-content:flex-start; padding-left:32.5%; gap:45px; flex-wrap:wrap; }
 .sk-footer-col{ width:265px; flex-shrink:0; }
 .sk-footer-col h4{ font-size:16px; letter-spacing:.09em; text-transform:uppercase; color:#fff; margin-bottom:24px; }
@@ -257,7 +257,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 }
 
 /* ================= PAGE ÉQUIPE & RECRUTEMENT ================= */
-.sk-eq-title{ text-align:center; font-family:'Anitype Journal', 'Fredoka', var(--font); font-weight:400; font-size:clamp(44px,7vw,80px); color:#111; text-shadow:0 1px 5px rgba(0,0,0,.12); margin:0; padding:88px 32px 0; background:#F9F4EF; }
+.sk-eq-title{ text-align:center; font-family:'Anitype Journal', 'Fredoka', var(--font); font-weight:400; font-size:clamp(44px,7vw,80px); color:#111; text-shadow:0 1px 5px rgba(0,0,0,.12); margin:0; padding:52px 32px 0; background:#F9F4EF; }
 
 .sk-eq-intro{ max-width:1280px; margin:0 auto; padding:64px 32px 120px; display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; background:#F9F4EF; font-family:'Outfit', var(--font); }
 .sk-eq-collage{ position:relative; width:100%; aspect-ratio:1/1.05; }
