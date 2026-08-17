@@ -255,10 +255,18 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 }
 @media (max-width:860px){
   .sk-cm-wrap{ grid-template-columns:1fr; }
-  .sk-cm-side{ position:static; padding:26px 20px 6px; }
-  .sk-cm-cat{ flex-flow:row wrap; gap:8px; margin-bottom:18px; }
-  .sk-cm-cat a{ padding:8px 14px; font-size:14px; }
-  .sk-cm-main{ border-left:none; border-top:1px solid #e6ddcd; padding:32px 20px 56px; }
+  /* la sidebar disparaît en tant que boîte : ses enfants (catégories + formule)
+     deviennent des lignes de la grille -> la barre catégories peut rester
+     collée en haut pendant tout le défilement de la carte */
+  .sk-cm-side{ display:contents; }
+  .sk-cm-cat{ position:sticky; top:0; z-index:15; margin:0; padding:11px 16px;
+    flex-direction:row; flex-wrap:nowrap; gap:8px; overflow-x:auto; -webkit-overflow-scrolling:touch;
+    background:#F9F4EF; border-bottom:1px solid #e6ddcd; box-shadow:0 4px 10px rgba(0,0,0,.06);
+    scrollbar-width:none; }
+  .sk-cm-cat::-webkit-scrollbar{ display:none; }
+  .sk-cm-cat a{ padding:8px 14px; font-size:14px; white-space:nowrap; flex:0 0 auto; }
+  .sk-cm-main{ order:1; border-left:none; border-top:1px solid #e6ddcd; padding:28px 20px 56px; }
+  .sk-cm-formule{ order:2; margin:0 20px 40px; }
 }
 @media (max-width:640px){
   .sk-cm-grid, .sk-cm-grid--6{ grid-template-columns:1fr 1fr; gap:26px 14px; }
