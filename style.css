@@ -43,7 +43,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-btn--white:hover{ box-shadow:0 12px 26px rgba(0,0,0,.2); }
 
 /* HEADER — bannière desktop compacte + watermark abeille */
-.sk-header{ background:#FFD936; position:relative; z-index:20; overflow:hidden; }
+.sk-header{ background:#FFD936; position:sticky; top:0; z-index:30; overflow:hidden; }
 /* Accueil : header transparent en overlay -> prend la couleur de la slide active */
 .sk-header--overlay{ position:absolute; top:0; left:0; right:0; z-index:30; background:transparent; overflow:visible; }
 .sk-header--overlay::before{ display:none; }
@@ -77,6 +77,18 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-hero-slide.is-active{ position:relative; opacity:1; visibility:visible; z-index:2; }
 .sk-hero-slide picture{ display:block; }
 .sk-hero-banner{ display:block; width:100%; height:auto; max-width:1440px; margin:0 auto; }
+
+/* BANDEAU HAPPY HOURS — fine bande promo sous le hero */
+.sk-happy{ background:#31524B; color:#fff; text-align:center; padding:13px 20px; }
+.sk-happy p{ margin:0 auto; max-width:1040px; font-family:'Inter', var(--font); font-size:14.5px; font-weight:500; line-height:1.5; }
+.sk-happy b{ color:#FFD936; font-weight:800; text-transform:uppercase; letter-spacing:.06em; }
+.sk-happy-sep{ margin:0 12px; opacity:.55; }
+.sk-happy-price{ color:#FFD936; font-weight:800; }
+@media (max-width:640px){
+  .sk-happy{ padding:11px 16px; }
+  .sk-happy p{ font-size:12.5px; }
+  .sk-happy-sep{ margin:0 7px; }
+}
 
 /* MENU (teaser photos + link to menu.html) */
 .sk-menu-teaser{ background:#F9F4EF; padding:96px 32px 44px; text-align:center; }
@@ -212,7 +224,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
 .sk-cm-wrap{ max-width:1280px; margin:0 auto; display:grid; grid-template-columns:250px 1fr; align-items:start; }
 
 /* Sidebar catégories */
-.sk-cm-side{ position:sticky; top:24px; align-self:start; padding:40px 24px 56px; }
+.sk-cm-side{ position:sticky; top:96px; align-self:start; padding:40px 24px 56px; }
 .sk-cm-cat{ list-style:none; margin:0 0 26px; padding:0; display:flex; flex-direction:column; gap:4px; }
 .sk-cm-cat a{ display:flex; align-items:center; gap:14px; padding:11px 16px; border-radius:12px; font-family:'Pally Variable','Fredoka',var(--font); font-weight:600; font-size:15px; letter-spacing:.05em; text-transform:uppercase; color:#5a5a56; transition:background .15s ease, color .15s ease; }
 .sk-cm-cat a:hover{ background:#fff; }
@@ -259,7 +271,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
      deviennent des lignes de la grille -> la barre catégories peut rester
      collée en haut pendant tout le défilement de la carte */
   .sk-cm-side{ display:contents; }
-  .sk-cm-cat{ position:sticky; top:0; z-index:15; margin:0; padding:11px 16px;
+  .sk-cm-cat{ position:sticky; top:82px; z-index:15; margin:0; padding:11px 16px;
     flex-direction:row; flex-wrap:nowrap; gap:8px; overflow-x:auto; -webkit-overflow-scrolling:touch;
     background:#F9F4EF; border-bottom:1px solid #e6ddcd; box-shadow:0 4px 10px rgba(0,0,0,.06);
     scrollbar-width:none; }
@@ -269,6 +281,7 @@ h1,h2,h3,h4{ margin:0; font-weight:600; }
   .sk-cm-formule{ order:2; margin:0 20px 40px; }
 }
 @media (max-width:640px){
+  .sk-cm-cat{ top:74px; }
   .sk-cm-grid, .sk-cm-grid--6{ grid-template-columns:1fr 1fr; gap:26px 14px; }
   .sk-cm-item img{ height:150px; }
   .sk-cm-grid--6 .sk-cm-item img{ height:130px; }
