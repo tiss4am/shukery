@@ -106,6 +106,19 @@ document.addEventListener('DOMContentLoaded', function () {
     revealEls.forEach(function (el) { revealObs.observe(el); });
   }
 
+  // ---- Instagram : lecture des reels au survol de la souris ----
+  document.querySelectorAll('.sk-insta-grid video').forEach(function (video) {
+    var cell = video.closest('a') || video;
+    cell.addEventListener('mouseenter', function () {
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+    cell.addEventListener('mouseleave', function () {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+
   // ---- Effets : spotlight glow (halo qui suit le curseur) ----
   var glowEls = Array.prototype.slice.call(document.querySelectorAll('.sk-eq-job, .sk-eq-value'));
   glowEls.forEach(function (card) {
